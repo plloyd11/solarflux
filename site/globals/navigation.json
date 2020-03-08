@@ -1,0 +1,20 @@
+{
+    "main": [
+        {
+            "label": "Product",
+            "url": "/product/"
+        },
+        {
+            "label": "About",
+            "url": "/about/"
+        },
+        {
+            "label": "Contact",
+            "url": "/contact/"
+        },
+        {
+            "label": "Blog",
+            "url": "/blog/"
+        }
+    ]
+}
