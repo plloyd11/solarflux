@@ -47,7 +47,11 @@
     <div id="wrapper" class="relative flex flex-col min-h-screen pb-16 wrapper md:pb-0">
 
         {# include header #}
+        {% if body_class === "home" %}
+        {% include "components/transparent-header.njk" %}
+        {% else %}
         {% include "components/header.njk" %}
+        {% endif %}
 
         {# include content #}
         {{ content | safe }}

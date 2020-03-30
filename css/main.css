@@ -617,6 +617,18 @@ video {
   padding-right: 1.5rem;
 }
 
+html {
+  background: #dfe3e8;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
 a {
   color: #44337a;
   text-decoration: none;
@@ -634,7 +646,10 @@ a:not([class]):hover {
   color: #ed64a6;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   line-height: 1.25;
   margin-top: 0;
@@ -1189,6 +1204,16 @@ h1, h2, h3, h4 {
 
 .form .textarea {
   height: 6rem;
+}
+
+.homepage--hero {
+  background: url("/images/homepage/hero.jpg") no-repeat bottom;
+  background-size: cover;
+}
+
+.homepage--callout {
+  background: url("/images/homepage/homepage-callout.jpg") no-repeat bottom;
+  background-size: cover;
 }
 
 .sr-only{
@@ -12477,32 +12502,8 @@ h1, h2, h3, h4 {
   width: 100vw;
 }
 
-.z-0{
-  z-index: 0;
-}
-
-.z-10{
-  z-index: 10;
-}
-
-.z-20{
-  z-index: 20;
-}
-
-.z-30{
-  z-index: 30;
-}
-
-.z-40{
-  z-index: 40;
-}
-
-.z-50{
-  z-index: 50;
-}
-
-.z-auto{
-  z-index: auto;
+.z-max{
+  z-index: 10000;
 }
 
 .gap-0{
@@ -26329,32 +26330,8 @@ h1, h2, h3, h4 {
     width: 100vw;
   }
 
-  .sm\:z-0{
-    z-index: 0;
-  }
-
-  .sm\:z-10{
-    z-index: 10;
-  }
-
-  .sm\:z-20{
-    z-index: 20;
-  }
-
-  .sm\:z-30{
-    z-index: 30;
-  }
-
-  .sm\:z-40{
-    z-index: 40;
-  }
-
-  .sm\:z-50{
-    z-index: 50;
-  }
-
-  .sm\:z-auto{
-    z-index: auto;
+  .sm\:z-max{
+    z-index: 10000;
   }
 
   .sm\:gap-0{
@@ -40182,32 +40159,8 @@ h1, h2, h3, h4 {
     width: 100vw;
   }
 
-  .md\:z-0{
-    z-index: 0;
-  }
-
-  .md\:z-10{
-    z-index: 10;
-  }
-
-  .md\:z-20{
-    z-index: 20;
-  }
-
-  .md\:z-30{
-    z-index: 30;
-  }
-
-  .md\:z-40{
-    z-index: 40;
-  }
-
-  .md\:z-50{
-    z-index: 50;
-  }
-
-  .md\:z-auto{
-    z-index: auto;
+  .md\:z-max{
+    z-index: 10000;
   }
 
   .md\:gap-0{
@@ -54035,32 +53988,8 @@ h1, h2, h3, h4 {
     width: 100vw;
   }
 
-  .lg\:z-0{
-    z-index: 0;
-  }
-
-  .lg\:z-10{
-    z-index: 10;
-  }
-
-  .lg\:z-20{
-    z-index: 20;
-  }
-
-  .lg\:z-30{
-    z-index: 30;
-  }
-
-  .lg\:z-40{
-    z-index: 40;
-  }
-
-  .lg\:z-50{
-    z-index: 50;
-  }
-
-  .lg\:z-auto{
-    z-index: auto;
+  .lg\:z-max{
+    z-index: 10000;
   }
 
   .lg\:gap-0{
@@ -67888,32 +67817,8 @@ h1, h2, h3, h4 {
     width: 100vw;
   }
 
-  .xl\:z-0{
-    z-index: 0;
-  }
-
-  .xl\:z-10{
-    z-index: 10;
-  }
-
-  .xl\:z-20{
-    z-index: 20;
-  }
-
-  .xl\:z-30{
-    z-index: 30;
-  }
-
-  .xl\:z-40{
-    z-index: 40;
-  }
-
-  .xl\:z-50{
-    z-index: 50;
-  }
-
-  .xl\:z-auto{
-    z-index: auto;
+  .xl\:z-max{
+    z-index: 10000;
   }
 
   .xl\:gap-0{

@@ -8,54 +8,56 @@ title: Contact Us
 
 <main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
 
-    <article id="container-centre" class="flex-1 column centre">
+  <article id="container-centre" class="flex-1 column centre">
 
-        <header>
-            <h1 class="page-title">{{ title }}</h1>
-        </header>
+    <header>
+      <h1 class="page-title">{{ title }}</h1>
+    </header>
 
-        <div class="content">
+    <div class="content">
 
-            <p>Tell us how great we are in the form below.</p>
+      <p>Tell us how great we are in the form below.</p>
 
-            <form class="form">
+      <form class="form">
 
-                {# this form doesn't work - it's just a nice boilerplate to get you up and running #}
-                {# uses HTML5 validation #}
+        {# this form doesn't work - it's just a nice boilerplate to get you up and running #}
+        {# uses HTML5 validation #}
 
-                {# if you add a class of 'required' to the row, you'll see the label will change to (required) #}
-                {# opinionated form UX - but it's nice and quick to see at glance what fields are required/optional #}
-                <div class="row required">
-                    <label for="name">Name</label>
-                    <input class="input" id="name" type="text" name="name" autocomplete="name" required aria-required="true">
-                </div>
+        {# if you add a class of 'required' to the row, you'll see the label will change to (required) #}
+        {# opinionated form UX - but it's nice and quick to see at glance what fields are required/optional #}
+        <div class="row required">
+          <label for="name">Name</label>
+          <input class="input" id="name" type="text" name="name" autocomplete="name" required aria-required="true">
+        </div>
 
-                <div class="row required">
-                    <label for="email">Email</label>
-                    <input class="input" id="email" type="text" name="email" autocorrect="off" autocapitalize="off" autocomplete="email" required aria-required="true">
-                </div>
+        <div class="row required">
+          <label for="email">Email</label>
+          <input class="input" id="email" type="text" name="email" autocorrect="off" autocapitalize="off"
+            autocomplete="email" required aria-required="true">
+        </div>
 
-                <div class="row required">
-                    <label for="phone">Phone</label>
-                    <input class="input" id="phone" type="text" name="phone" autocomplete="tel" required aria-required="true">
-                </div>
+        <div class="row required">
+          <label for="phone">Phone</label>
+          <input class="input" id="phone" type="text" name="phone" autocomplete="tel" required aria-required="true">
+        </div>
 
-                {# you'll see the label change to (optional) if you leave the required class off the row #}
-                <div class="row">
-                    <label for="message">Message</label>
-                    <textarea class="textarea" id="message" name="message"></textarea>
-                </div>
-             
-                <div class="row">
-                    <button class="inline-block px-6 py-4 font-bold text-white bg-pink-500 rounded hover:bg-pink-600" type="submit">Send message!</button>
-                </div>
+        {# you'll see the label change to (optional) if you leave the required class off the row #}
+        <div class="row">
+          <label for="message">Message</label>
+          <textarea class="textarea" id="message" name="message"></textarea>
+        </div>
+         
+        <div class="row">
+          <button class="inline-block px-6 py-4 font-bold text-white bg-pink-500 rounded hover:bg-pink-600"
+            type="submit">Send message!</button>
+        </div>
 
-            </form>
+      </form>
 
-    </article>
+  </article>
 
-    {# an optional and basic local business schema example #}
-    {# <script type="application/ld+json">
+  {# an optional and basic local business schema example #}
+  {# <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -81,4 +83,3 @@ title: Contact Us
     </script> #}
 
 </main>
-

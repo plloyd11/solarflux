@@ -17,6 +17,9 @@ module.exports = {
       '2': '2px',
       '4': '4px',
     },
+    zIndex: {
+      'max': 10000
+    },
     extend: {
       colors: {
         cyan: '#9cdbff',
