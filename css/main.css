@@ -12374,6 +12374,10 @@ h4 {
   width: 16rem;
 }
 
+.w-78{
+  width: 20rem;
+}
+
 .w-96{
   width: 24rem;
 }
@@ -26200,6 +26204,10 @@ h4 {
 
   .sm\:w-64{
     width: 16rem;
+  }
+
+  .sm\:w-78{
+    width: 20rem;
   }
 
   .sm\:w-96{
@@ -40031,6 +40039,10 @@ h4 {
     width: 16rem;
   }
 
+  .md\:w-78{
+    width: 20rem;
+  }
+
   .md\:w-96{
     width: 24rem;
   }
@@ -53860,6 +53872,10 @@ h4 {
     width: 16rem;
   }
 
+  .lg\:w-78{
+    width: 20rem;
+  }
+
   .lg\:w-96{
     width: 24rem;
   }
@@ -67687,6 +67703,10 @@ h4 {
 
   .xl\:w-64{
     width: 16rem;
+  }
+
+  .xl\:w-78{
+    width: 20rem;
   }
 
   .xl\:w-96{
