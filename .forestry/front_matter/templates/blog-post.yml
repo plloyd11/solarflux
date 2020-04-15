@@ -1,6 +1,7 @@
 ---
 label: Blog Post
 hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
@@ -17,8 +18,12 @@ fields:
 - type: textarea
   name: excerpt
   label: excerpt
-- type: list
-  name: tags
+- name: tags
+  type: text
+  config:
+    required: false
+  hidden: true
   label: tags
+  default: blog
 pages:
 - site/blog/forestry-blog-post.md
