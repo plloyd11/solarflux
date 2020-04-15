@@ -9,6 +9,8 @@ fields:
 - type: datetime
   name: date
   label: Date
+  config:
+    export_format: MM/DD/YYYY
 - type: file
   name: featured_image
   label: Featured Image
