@@ -1,33 +1,13 @@
 /*
-A date formatter filter for Nunjucks
+A date formatter filter for Nunjucks - MM/DD/YYYY
 */
-module.exports = function(date, part) {
-  var d = new Date(date);
-  if(part == 'year') {
-    return d.getUTCFullYear();
-  }
-  var month = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  var ordinal = {
-    1 : "st",
-    2 : "nd",
-    3 : "rd",
-    21 : "st",
-    22 : "nd",
-    23 : "rd",
-    31 : "st"
-  };
-  return d.getDate() + (ordinal[d.getDate()] || "th") + " " + month[d.getMonth()] + ", " + d.getUTCFullYear();
+const leftPad = (a) => a < 10 ? `0${a}` : a;
+
+module.exports = function(dateInput) {
+  const dateObject = new Date(dateInput);
+  // month is zero indexed because JavaScript
+  const mm = dateObject.getMonth() + 1;
+  const dd = dateObject.getDate();
+  const yyyy = dateObject.getFullYear();
+  return `${leftPad(mm)}/${leftPad(dd)}/${yyyy}`;
 }

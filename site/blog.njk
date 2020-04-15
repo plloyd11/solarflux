@@ -44,10 +44,8 @@ title: The Solarflux Blog
 
           <div class="mb-4 text-sm text-gray-600 md:flex">
 
-            <p class="hidden px-2 md:block">—</p>
-
             <time datetime="{{ post.date }}">
-              {{ post.date }}
+              {{ post.date | dateDisplay }}
             </time>
 
           </div>
