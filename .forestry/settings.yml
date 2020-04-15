@@ -3,7 +3,15 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
+sections:
+- type: directory
+  path: site/blog
+  label: Blog
+  create: documents
+  match: "**/*"
+  exclude: "**/*.json"
+  templates:
+  - blog-post
 upload_dir: "./images/public"
 public_path: "/images/public"
 front_matter_path: ''
