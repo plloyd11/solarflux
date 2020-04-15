@@ -15,36 +15,13 @@ layout: default
 
             <div class="text-sm md:text-base text-gray-600 flex justify-center">
 
-                <p class="author">By {{ site.author.name }}</p>
+                {# <p class="author">By {{ site.author.name }}</p> #}
 
                 <p class="px-2">—</p>
 
                 <time datetime="{{ date }}">
                     {{ date | dateDisplay }}
                 </time>
-
-                {% if tags %}
-
-                    {# this will create a comma for multiple category links #}
-                    {% set comma = joiner() %}
-
-                    <p class="px-2">—</p>
-
-                    <p class="category">Posted in
-
-                        {% for item in tags %}
-
-                            {%- if item != "blog" -%}
-
-                                <a href="/category/{{ item }}">{{ comma() }} {{ item | capitalize }}</a>
-
-                            {%- endif -%}
-
-                        {% endfor %}
-
-                    </p>
-
-                {% endif %}
 
             </div>
 
@@ -70,27 +47,6 @@ layout: default
         <div class="content post md:px-16">
 
             {{ content | safe }}
-
-            {# category links list #}
-            {% if tags %}
-
-                <ul class="flex pt-4">
-
-                    {% for item in tags %}
-
-                        {%- if item != "blog" -%}
-
-                            <li class="mr-2">
-                                <a class="inline-block px-3 py-2 text-white bg-purple-900 text-xs font-semibold rounded hover:text-white hover:bg-pink-500" href="/category/{{ item }}">{{ item | capitalize }}</a>
-                            </li>
-
-                        {%- endif -%}
-
-                    {% endfor %}
-
-                </ul>
-
-            {% endif %}
 
         </div>
 

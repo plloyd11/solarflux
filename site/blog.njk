@@ -23,26 +23,6 @@ title: The Solarflux Blog
 
         <a class="relative block overflow-hidden featured-image-link" href="{{ post.url }}">
 
-          {# category link #}
-          <ul class="absolute bottom-0 left-0 z-10 flex p-8">
-
-            {% for item in post.data.tags %}
-
-            {%- if item != "blog" -%}
-
-            <li class="mr-2">
-
-              <span
-                class="inline-block px-4 py-2 text-xs font-bold text-white bg-pink-500 rounded">{{ item | capitalize }}</span>
-
-            </li>
-
-            {%- endif -%}
-
-            {% endfor %}
-
-          </ul>
-
           <figure>
 
             {# the 'data-lazy' attribute will lazy load your images in #}
@@ -63,8 +43,6 @@ title: The Solarflux Blog
               href="{{ post.url }}">{{ post.data.title }}</a></h2>
 
           <div class="mb-4 text-sm text-gray-600 md:flex">
-
-            <p class="author">By {{ site.author.name }}</p>
 
             <p class="hidden px-2 md:block">—</p>
 
