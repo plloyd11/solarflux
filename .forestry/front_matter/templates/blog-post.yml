@@ -5,19 +5,13 @@ display_field: title
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: file
   name: featured_image
-  label: featured_image
-- type: text
-  name: image_caption
-  label: image_caption
-- type: textarea
-  name: excerpt
-  label: excerpt
+  label: Featured Image
 - name: tags
   type: text
   config:
