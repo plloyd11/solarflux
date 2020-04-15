@@ -9,6 +9,7 @@ sections:
   label: Blog
   create: documents
   match: "**/*"
+  exclude: "**/*.json"
   templates:
   - blog-post
 upload_dir: "./images/public"
