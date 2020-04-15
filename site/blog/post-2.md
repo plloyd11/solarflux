@@ -1,6 +1,6 @@
 ---
 title: Five things you need to know to run a podcast
-date: 03/29/2020
+date: 2020-03-29
 featured_image: "/images/blog/post-2.jpg"
 tags: blog
 ---

@@ -1,6 +1,6 @@
 ---
 title: Why running is incredible medicine for your brain
-date: 04/13/2020
+date: 2020-04-13
 featured_image: "/images/blog/post-3.jpg"
 tags: blog
 ---

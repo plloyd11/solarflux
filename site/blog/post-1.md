@@ -1,6 +1,6 @@
 ---
 title: 7 steps to more productive meetings
-date: 04/04/2020
+date: 2020-04-04
 featured_image: "/images/blog/post-1.jpg"
 tags: blog
 ---
