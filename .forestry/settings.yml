@@ -12,7 +12,7 @@ sections:
   exclude: "**/*.json"
   templates:
   - blog-post
-upload_dir: "./images/public"
+upload_dir: images/public
 public_path: "/images/public"
 front_matter_path: ''
 use_front_matter_path: false
