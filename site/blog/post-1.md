@@ -1,14 +1,15 @@
 ---
 title: 7 steps to more productive meetings
-date: 2018-09-30
-featured_image: /images/blog/post-1.jpg
+date: 04/04/2020
+featured_image: "/images/blog/post-1.jpg"
 image_caption: Photo by Dylan Gillis on Unsplash
-excerpt: A meeting is a gathering of two or more people that has been convened for the purpose of achieving a common goal through verbal interaction.
+excerpt: A meeting is a gathering of two or more people that has been convened for
+  the purpose of achieving a common goal through verbal interaction.
 tags:
-    - blog
-    - business
----
+- blog
+- business
 
+---
 A meeting is a gathering of two or more people that has been convened for the purpose of achieving a common goal through verbal interaction.
 
 Such as sharing information or reaching an agreement. Meetings may occur face-to-face or virtually, as mediated by communications technology, such as a telephone conference call, a skyped conference call or a video conference.
