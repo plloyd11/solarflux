@@ -1,10 +1,9 @@
 ---
 title: Five things you need to know to run a podcast
-date: 2019-10-30
-featured_image: /images/blog/post-2.jpg
+date: 03/29/2020
+featured_image: "/images/blog/post-2.jpg"
 tags: blog
 ---
-
 A Podcast is an episodic series of digital audio files which a user can subscribe to so that new episodes are automatically downloaded via web syndication to the user’s own local computer, mobile application, or portable media player.
 
 The word arose as a portmanteau of “iPod” and “broadcast”. Thus, the files distributed are in audio format, but may sometimes include other file formats such as PDF or ePub. Videos which are shared following a podcast model are called video podcasts or vodcasts.
