@@ -11,6 +11,7 @@ fields:
   label: Date
   config:
     export_format: MM/DD/YYYY
+    date_format: MM/DD/YYYY
   default: now
 - type: file
   name: featured_image
