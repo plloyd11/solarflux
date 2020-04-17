@@ -13,4 +13,4 @@ module.exports = function(templateContent, characterCount) {
     }
   }
   return `${excerpt.join(' ')}...`
-};
+}
