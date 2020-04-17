@@ -1,26 +1,11 @@
 // tailwind.config.js
 module.exports = {
   theme: {
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-    },
-    fontFamily: {
-      display: ['Montserrat', 'sans-serif'],
-      body: ['Merriweather', 'serif'],
-    },
-    borderWidth: {
-      default: '1px',
-      '0': '0',
-      '2': '2px',
-      '4': '4px',
-    },
-    zIndex: {
-      'max': 10000
-    },
     extend: {
+      fontFamily: {
+        display: ['Montserrat', 'sans-serif'],
+        body: ['Merriweather', 'serif'],
+      },
       colors: {
         cyan: '#9cdbff',
         primaryPurple: '#16134C',
@@ -32,10 +17,20 @@ module.exports = {
       },
       width: {
         '78': '20rem'
-      }
+      },
+      screens: {
+        '2xl': '1440px',
+        '3xl': '1680px'
+      },
+      zIndex: {
+        '1000': 1000
+      },
+      maxWidth: {
+        'max-w-screen-body': '1680px'
+      },
     },
-    plugins: [
-      require('@tailwindcss/ui')
-    ],
-  }
+  },
+  plugins: [
+    require('@tailwindcss/ui')
+  ],
 }
