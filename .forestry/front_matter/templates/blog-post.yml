@@ -28,9 +28,12 @@ fields:
   default: []
   config:
     required: false
-    options: []
+    options:
+    - Updates
+    - News
+    - Learning
     source:
-      type: pages
+      type: simple
       section: 
       file: 
       path: 
