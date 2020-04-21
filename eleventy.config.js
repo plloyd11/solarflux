@@ -6,6 +6,9 @@ module.exports = eleventyConfig => {
     eleventyConfig.addFilter("dateDisplay", require("./filters/dates.js"))
 
     // Add a HTML timestamp formatter filter to Nunjucks
+    eleventyConfig.addFilter("renderExcerpt", require("./filters/excerpt.js"))
+    
+    // Add a HTML timestamp formatter filter to Nunjucks
     eleventyConfig.addFilter("htmlDateDisplay", require("./filters/timestamp.js"))
 
     // Minify our HTML
