@@ -3,6 +3,8 @@ title: 7 steps to more productive meetings
 date: 2020-04-04
 featured_image: "/images/blog/post-1.jpg"
 tags: blog
+category: News
+
 ---
 A meeting is a gathering of two or more people that has been convened for the purpose of achieving a common goal through verbal interaction.
 

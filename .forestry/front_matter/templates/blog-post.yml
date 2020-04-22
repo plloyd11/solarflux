@@ -23,5 +23,20 @@ fields:
   hidden: true
   label: tags
   default: blog
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Updates
+    - News
+    - Learning
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
 pages:
 - site/blog/forestry-blog-post.md

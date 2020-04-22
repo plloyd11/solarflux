@@ -3,6 +3,8 @@ title: Why running is incredible medicine for your brain
 date: 2020-04-13
 featured_image: "/images/blog/post-3.jpg"
 tags: blog
+category: News
+
 ---
 Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot. This is in contrast to walking, where one foot is always in contact with the ground, the legs are kept mostly straight.
 
