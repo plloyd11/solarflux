@@ -1,0 +1,72 @@
+---
+layout: default
+meta_title: Category Layout
+meta_description: Blog category description
+body_class: blog
+pagination:
+    data: categories
+    size: 1
+    alias: category
+permalink: "/blog/{{ category.name | slug }}/"
+---
+
+<main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
+
+  <section id="container-centre" class="flex-1 column centre" aria-label="Blogs">
+
+    <h1 class="mb-16 text-3xl page-title md:text-center md:text-5xl lg:mb-24 lg:text-6xl">{{ title }}</h1>
+
+    <div class="flex-1 posts lg:flex">
+
+      {% for post in collections.blog %}
+
+        {% if post.data.category === category.name %}
+        <article class="flex-1 mx-4 mb-8 overflow-hidden bg-white rounded-lg shadow-lg article-card">
+
+          <a class="relative block overflow-hidden featured-image-link" href="{{ post.url }}">
+
+            <figure>
+
+              {# the 'data-lazy' attribute will lazy load your images in #}
+              {# the js uses the new Intersection Observer API, see ../modules/lazyload #}
+              {# it's not fully supported in some browsers, so proceed with caution! #}
+              {# the srcset attribute would be a nice addtion here as well...in a future update maybe :) #}
+              <img data-lazy="{{ post.data.featured_image }}" class="block">
+
+            </figure>
+
+          </a>
+
+          <div class="p-8">
+
+            <h2 class="mb-6 text-2xl"><a class="block text-purple-900 hover:text-pink-500"
+                href="{{ post.url }}">{{ post.data.title }}</a></h2>
+
+            <div class="mb-4 text-sm text-gray-600 md:flex">
+
+              <time datetime="{{ post.date }}">
+                {{ post.date | dateDisplay }}
+              </time>
+
+            </div>
+
+            <div class="{{ post.data.category | categoryStyle()}}">
+              {{ post.data.category }}
+            </div>
+
+            <div>
+              {{ post.templateContent | renderExcerpt(80)}}
+            </div>
+
+          </div>
+
+        </article>
+
+        {% endif %}
+      {% endfor %}
+
+    </div>
+
+  </section>
+
+</main>

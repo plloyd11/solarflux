@@ -2,14 +2,11 @@ const htmlmin = require("html-minifier")
 
 module.exports = eleventyConfig => {
 
-    // Add a readable date formatter filter to Nunjucks
+    // Nunjuck filters
+    eleventyConfig.addFilter("categoryStyle", require("./filters/categoryStyle.js"))
     eleventyConfig.addFilter("dateDisplay", require("./filters/dates.js"))
-
-    // Add a HTML timestamp formatter filter to Nunjucks
-    eleventyConfig.addFilter("renderExcerpt", require("./filters/excerpt.js"))
-    
-    // Add a HTML timestamp formatter filter to Nunjucks
     eleventyConfig.addFilter("htmlDateDisplay", require("./filters/timestamp.js"))
+    eleventyConfig.addFilter("renderExcerpt", require("./filters/excerpt.js"))
 
     // Minify our HTML
     eleventyConfig.addTransform("htmlmin", (content, outputPath) => {

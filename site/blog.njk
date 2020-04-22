@@ -45,6 +45,10 @@ title: The Solarflux Blog
 
           </div>
 
+          <div class="{{ post.data.category | categoryStyle()}}">
+            <a href="/blog/{{ post.data.category | lower }}/">{{ post.data.category }}</a>
+          </div>
+
           <div>
             {{ post.templateContent | renderExcerpt(80)}}
           </div>
