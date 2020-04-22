@@ -1,0 +1,10 @@
+[{
+  "name": "News",
+  "style": "category-news"
+}, {
+  "name": "Updates",
+  "style": "category-updates"
+}, {
+  "name": "Learning",
+  "style": "category-learning"
+}]

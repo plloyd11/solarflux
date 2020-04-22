@@ -35,8 +35,8 @@ title: The Solarflux Blog
 
         <div class="px-4 py-6">
 
-          <div>
-            <a href="#">Updates</a>
+          <div class="{{ post.data.category | categoryStyle()}}">
+            <a href="/blog/{{ post.data.category | lower }}/">{{ post.data.category }}</a>
           </div>
 
           <h2 class="mb-6 text-xl">
@@ -51,6 +51,7 @@ title: The Solarflux Blog
 
           </div>
 
+          <div>
           <div class="text-base text-gray-600">
             {{ post.templateContent | renderExcerpt(80)}}
           </div>

@@ -1,0 +1,78 @@
+---
+layout: default
+meta_title: Category Layout
+meta_description: Blog category description
+body_class: blog
+pagination:
+    data: categories
+    size: 1
+    alias: category
+permalink: "/blog/{{ category.name | slug }}/"
+---
+
+<main>
+  <section class="article-hero">
+    <h1>Insights</h1>
+    <img src="/images/blog/blog-hero.png" alt="">
+  </section>
+
+  <section class="mt-24 mb-16">
+    <h2 class="text-3xl text-center text-gray-900">All About Solar</h2>
+    <p class="max-w-screen-xl mx-auto text-xl font-light text-center text-gray-600">Introduction to the blog text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi est massa varius vulputate viverra senectus eleifend. Ultricies integer elementum non eget at etiam imperdiet odio vel.</p>
+  </section>
+  
+  <section class="max-w-screen-xl mx-auto" aria-label="Blogs">
+
+    <div class="grid grid-cols-3 gap-6 posts">
+
+      {% for post in collections.blog %}
+        {% if post.data.category === category.name %}
+
+        <article class="flex-1 overflow-hidden bg-white rounded-lg shadow-lg article-card">
+
+          <a class="relative block overflow-hidden featured-image-link" href="{{ post.url }}">
+
+            <figure>
+              <img data-lazy="{{ post.data.featured_image }}" class="block">
+            </figure>
+
+          </a>
+
+          <div class="px-4 py-6">
+
+            <div class="{{ post.data.category | categoryStyle()}}">
+              <a href="/blog/{{ post.data.category | lower }}/">{{ post.data.category }}</a>
+            </div>
+
+            <h2 class="mb-6 text-xl">
+              <a class="block text-gray-800 hover:text-gray-600" href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+
+            <div class="mb-4 text-sm text-gray-600 md:flex">
+
+              <time datetime="{{ post.date }}">
+                {{ post.date | dateDisplay }}
+              </time>
+
+            </div>
+
+            <div>
+            <div class="text-base text-gray-600">
+              {{ post.templateContent | renderExcerpt(80)}}
+            </div>
+
+          </div>
+
+        </article>
+
+        {% endif %}
+      {% endfor %}
+
+    </div>
+
+  </section>
+  <!-- Contact Form -->
+  <section>
+    {% include 'components/form.njk' %}
+  </section>
+</main>
