@@ -15,3 +15,14 @@ body {
 .max-w-screen-body {
   max-width: 1680px;
 }
+
+.article-hero {
+  position: relative;
+  h1 {
+    position: absolute;
+    left: calc(50% - 600px);
+    top: 40%;
+    font-size: 48px;
+    color: #fff;
+  }
+}

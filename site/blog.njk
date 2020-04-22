@@ -6,36 +6,42 @@ body_class: blog
 title: The Solarflux Blog
 ---
 
-<main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
+<main>
+  <section class="article-hero">
+    <h1>Insights</h1>
+    <img src="/images/blog/blog-hero.png" alt="">
+  </section>
 
-  <section id="container-centre" class="flex-1 column centre" aria-label="Blogs">
+  <section class="mt-24 mb-16">
+    <h2 class="text-3xl text-center text-gray-900">All About Solar</h2>
+    <p class="max-w-screen-xl mx-auto text-xl font-light text-center text-gray-600">Introduction to the blog text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi est massa varius vulputate viverra senectus eleifend. Ultricies integer elementum non eget at etiam imperdiet odio vel.</p>
+  </section>
+  
+  <section class="max-w-screen-xl mx-auto" aria-label="Blogs">
 
-    <h1 class="mb-16 text-3xl page-title md:text-center md:text-5xl lg:mb-24 lg:text-6xl">{{ title }}</h1>
-
-    <div class="flex-1 posts lg:flex">
+    <div class="grid grid-cols-3 gap-6 posts">
 
       {% for post in collections.blog %}
 
-      <article class="flex-1 mx-4 mb-8 overflow-hidden bg-white rounded-lg shadow-lg article-card">
+      <article class="flex-1 overflow-hidden bg-white rounded-lg shadow-lg article-card">
 
         <a class="relative block overflow-hidden featured-image-link" href="{{ post.url }}">
 
           <figure>
-
-            {# the 'data-lazy' attribute will lazy load your images in #}
-            {# the js uses the new Intersection Observer API, see ../modules/lazyload #}
-            {# it's not fully supported in some browsers, so proceed with caution! #}
-            {# the srcset attribute would be a nice addtion here as well...in a future update maybe :) #}
             <img data-lazy="{{ post.data.featured_image }}" class="block">
-
           </figure>
 
         </a>
 
-        <div class="p-8">
+        <div class="px-4 py-6">
 
-          <h2 class="mb-6 text-2xl"><a class="block text-purple-900 hover:text-pink-500"
-              href="{{ post.url }}">{{ post.data.title }}</a></h2>
+          <div class="{{ post.data.category | categoryStyle()}}">
+            <a href="/blog/{{ post.data.category | lower }}/">{{ post.data.category }}</a>
+          </div>
+
+          <h2 class="mb-6 text-xl">
+            <a class="block text-gray-800 hover:text-gray-600" href="{{ post.url }}">{{ post.data.title }}</a>
+          </h2>
 
           <div class="mb-4 text-sm text-gray-600 md:flex">
 
@@ -45,11 +51,8 @@ title: The Solarflux Blog
 
           </div>
 
-          <div class="{{ post.data.category | categoryStyle()}}">
-            <a href="/blog/{{ post.data.category | lower }}/">{{ post.data.category }}</a>
-          </div>
-
           <div>
+          <div class="text-base text-gray-600">
             {{ post.templateContent | renderExcerpt(80)}}
           </div>
 
@@ -62,5 +65,8 @@ title: The Solarflux Blog
     </div>
 
   </section>
-
+  <!-- Contact Form -->
+  <section>
+    {% include 'components/form.njk' %}
+  </section>
 </main>
