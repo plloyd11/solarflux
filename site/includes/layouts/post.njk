@@ -3,17 +3,17 @@ layout: default
 ---
 
 {# a post layout #}
-<main id="main" class="main inner flex flex-1 flex-col py-10 lg:py-20 focus:outline-none" tabindex="-1">
+<main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
 
-    <article id="container-centre" class="column centre flex-1">
+    <article id="container-centre" class="flex-1 column centre">
 
         <div class="mb-12 md:mb-20">
 
             <header>
-                <h1 class="page-title text-3xl md:text-center md:text-5xl lg:text-6xl">{{ title }}</h1>
+                <h1 class="text-3xl page-title md:text-center md:text-5xl lg:text-6xl">{{ title }}</h1>
             </header>
 
-            <div class="text-sm md:text-base text-gray-600 flex justify-center">
+            <div class="flex justify-center text-sm text-gray-600 md:text-base">
 
                 {# <p class="author">By {{ site.author.name }}</p> #}
 
@@ -34,7 +34,7 @@ layout: default
 
                     {% if image_caption %}
 
-                        <figcaption class="text-center text-sm italic text-gray-600 mt-4">{{ image_caption }}</figcaption>
+                        <figcaption class="mt-4 text-sm italic text-center text-gray-600">{{ image_caption }}</figcaption>
 
                     {% endif %}
 
@@ -52,9 +52,9 @@ layout: default
 
         <div class="mt-16 md:px-16">
 
-            <div class="flex justify-between mt-16 border-t border-gray-200 pt-12">
-                {% if prevPost %}<p class="text-gray-700 text-sm"><span>Previous:</span> <a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a></p>{% endif %}
-                {% if nextPost %}<p class="text-gray-700 text-sm"><span>Next:</span> <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></p>{% endif %}
+            <div class="flex justify-between pt-12 mt-16 border-t border-gray-200">
+                {% if prevPost %}<p class="text-sm text-gray-700"><span>Previous:</span> <a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a></p>{% endif %}
+                {% if nextPost %}<p class="text-sm text-gray-700"><span>Next:</span> <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></p>{% endif %}
             </div>
         </div>
 

@@ -631,6 +631,18 @@ body {
   max-width: 1680px;
 }
 
+.article-hero {
+  position: relative;
+}
+
+.article-hero h1 {
+  position: absolute;
+  left: calc(50% - 600px);
+  top: 40%;
+  font-size: 48px;
+  color: #fff;
+}
+
 a {
   color: #4a1d96;
   text-decoration: none;
@@ -655,7 +667,6 @@ h4 {
   font-weight: 700;
   line-height: 1.25;
   margin-top: 0;
-  margin-bottom: 1.5rem;
   font-family: Montserrat, sans-serif;
 }
 
