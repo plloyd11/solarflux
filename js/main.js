@@ -274,8 +274,8 @@ var $$ = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/john/dev/observatory/solarflux/resources/js/main.js */"./resources/js/main.js");
-module.exports = __webpack_require__(/*! /Users/john/dev/observatory/solarflux/resources/sass/main.scss */"./resources/sass/main.scss");
+__webpack_require__(/*! /Users/john/dev/solarflux/resources/js/main.js */"./resources/js/main.js");
+module.exports = __webpack_require__(/*! /Users/john/dev/solarflux/resources/sass/main.scss */"./resources/sass/main.scss");
 
 
 /***/ })
