@@ -1,12 +1,13 @@
 {
   "name": "Solarflux",
-  "url": "https://www.solarflux.co/",
+  "url": "https://www.solarflux.co",
   "author": {
     "name": "Peter Lloyd",
     "email": "plloyd11@gmail.com",
     "handle": "@leteployd",
     "avatar": "/images/blog/author.jpg"
   },
+  "twitterAccount": "twitterAccount",
   "images": {
     "logo": "/images/logo/logo.png",
     "favicon": "/images/favicon.ico",

@@ -50,12 +50,12 @@ layout: default
 
         </div>
 
-        <div class="mt-16 md:px-16">
-
-            <div class="flex justify-between pt-12 mt-16 border-t border-gray-200">
-                {% if prevPost %}<p class="text-sm text-gray-700"><span>Previous:</span> <a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a></p>{% endif %}
-                {% if nextPost %}<p class="text-sm text-gray-700"><span>Next:</span> <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></p>{% endif %}
-            </div>
+        <div>
+        {{this}}
+            <a href="http://twitter.com/share?url={{ site.url | encodeUri }}{{ page.url }}&text={{ title | encodeUri }}&via={{ site.twitterAccount }}" target="_blank">Share on Twitter</a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?mini=true&url={{ site.url | encodeUri }}{{ page.url | encodeUri }}&title={{ title | encodeUri }}&summary={{ title | encodeUri }}&source=SolarFlux" target="_blank">Share on LinkedIn</a>
         </div>
 
     </article>
