@@ -51,7 +51,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy("js")
     eleventyConfig.addPassthroughCopy("images")
     eleventyConfig.addPassthroughCopy("robots.txt")
-    eleventyConfig.addPassthroughCopy("static")
+    eleventyConfig.addPassthroughCopy({ "static/admin": "admin"})
 
     return {
         templateFormats: ["md", "njk"],
