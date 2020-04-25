@@ -1463,6 +1463,21 @@ h4 {
   line-height: 1.5;
 }
 
+.category-updates a {
+  color: #8F5C1E;
+  background-color: #F6B160;
+}
+
+.category-news a {
+  color: #221E8F;
+  background-color: #6560F6;
+}
+
+.category-learning a {
+  color: #8F331E;
+  background-color: #F67C60;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
