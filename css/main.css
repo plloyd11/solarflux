@@ -606,15 +606,6 @@ video {
   opacity: 1;
 }
 
-.inner {
-  width: 100%;
-  max-width: 72rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 html {
   background: #dfe3e8;
   scroll-behavior: smooth;
@@ -1420,8 +1411,8 @@ h4 {
 }
 
 .global--form {
-  padding-top: 12rem;
-  padding-bottom: 16rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
   background: url("/images/form-bg.jpg") no-repeat center center;
   background-size: cover;
 }
