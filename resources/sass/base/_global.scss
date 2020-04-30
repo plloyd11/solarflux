@@ -17,7 +17,11 @@ body {
 }
 
 .article-hero {
+  margin-bottom: 48px;
   position: relative;
+  @media (min-width: 1024px) {
+    margin-bottom: 92px;
+  }
   h1 {
     position: absolute;
     left: calc(50% - 600px);

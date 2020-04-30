@@ -10,3 +10,12 @@
 .loaded {
     @apply opacity-100;
 }
+
+.rounded-bg {
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.rounded-top-left {
+    border-top-left-radius: 200px;
+}

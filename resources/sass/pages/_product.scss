@@ -1,0 +1,15 @@
+.comparison-table {
+  @media (min-width: 1280px) {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 100%;
+      top: 0;
+      left: calc(50% - 360px);
+      background: hsla(33, 93%, 54%, .05);
+      border: 2px solid #F7941D;
+      border-radius: 30px;
+    }
+  }
+}
