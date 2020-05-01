@@ -1,10 +1,10 @@
-<nav id="mobile-nav" class="mobile-nav fixed left-0 top-0 h-screen w-full overflow-y-auto pt-12 bg-purple-900 z-50 md:hidden">
+<nav id="mobile-nav" class="fixed top-0 left-0 z-50 w-full h-screen pt-12 overflow-y-auto bg-primaryPurple mobile-nav md:hidden">
 
     <ul>
 
         {% for item in navigation.main %}
 
-        <li class="item relative opacity-0">
+        <li class="relative opacity-0 item">
 
             <a href="{{ item.url | safe }}" class="link block py-2 px-5 text-white text-3xl hover:text-purple-500 {% if page.url == item.url %}active text-purple-500{% endif %}
             "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
@@ -17,14 +17,14 @@
 
 </nav>
 
-<button id="mobile-nav-toggle" class="mobile-nav-toggle block fixed h-16 w-full bottom-0 flex items-center justify-center font-bold border-none bg-purple-900 text-white z-50 focus:outline-none md:hidden" aria-label="Mobile menu toggle" aria-expanded="false" aria-controls="mobile-nav">
+<button id="mobile-nav-toggle" class="flex items-center justify-center block w-full h-16 font-bold text-white border-none z-1000 mobile-nav-toggle focus:outline-none md:hidden" aria-label="Mobile menu toggle" aria-expanded="false" aria-controls="mobile-nav">
 
-   <span class="mobile-nav-label mr-2 font-medium">Menu</span>
-
-   <span class="mobile-nav-icon" aria-hidden="true">
-      <span class="mobile-nav-icon-line bg-white w-6 block transition-all duration-200 ease-out mb-1"></span>
-      <span class="mobile-nav-icon-line bg-white w-6 block transition-all duration-200 ease-out mb-1"></span>
-      <span class="mobile-nav-icon-line bg-white w-6 block transition-all duration-200 ease-out"></span>
+   <span class="mr-2 font-medium mobile-nav-label">Menu</span>
+   
+   <span class="mobile-nav-icon z-max" aria-hidden="true">
+      <span class="block w-6 mb-1 transition-all duration-200 ease-out bg-primaryPurple mobile-nav-icon-line"></span>
+      <span class="block w-6 mb-1 transition-all duration-200 ease-out bg-primaryPurple mobile-nav-icon-line"></span>
+      <span class="block w-6 transition-all duration-200 ease-out bg-primaryPurple mobile-nav-icon-line"></span>
    </span>
 
 </button>

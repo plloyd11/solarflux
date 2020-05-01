@@ -7,13 +7,13 @@
     {% if body_class === 'home' %}
     <li class="mb-4 level-1 md:mr-4 md:mb-0">
       <a href="{{ item.url | safe }}"
-        class="mr-6 text-lg font-bold text-white uppercase link font-display hover:text-primaryPurple"
+        class="mr-6 text-lg font-bold text-white uppercase link font-display hover:text-primaryOrange"
         {% if page.url == item.url %} aria-current="page" {% endif %}>{{ item.label }}</a>
     </li>
     {% else %}
     <li class="mb-4 level-1 md:mr-4 md:mb-0">
       <a href="{{ item.url | safe }}"
-        class="link mr-6 text-lg font-bold font-display text-primaryPurple uppercase hover:text-purple-800 active:text-purple-800 {% if page.url == item.url %}active text-purple-800{% endif %}"
+        class="link mr-6 text-lg font-bold font-display text-primaryPurple uppercase hover:text-primaryOrange {% if page.url == item.url %}active text-primaryOrange {% endif %}"
         {% if page.url == item.url %} aria-current="page" {% endif %}>{{ item.label }}</a>
     </li>
     {% endif %}
