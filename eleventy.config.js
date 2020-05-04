@@ -6,7 +6,6 @@ module.exports = eleventyConfig => {
     eleventyConfig.addFilter("categoryStyle", require("./filters/categoryStyle.js"))
     eleventyConfig.addFilter("dateDisplay", require("./filters/dates.js"))
     eleventyConfig.addFilter("htmlDateDisplay", require("./filters/timestamp.js"))
-    eleventyConfig.addFilter("renderExcerpt", require("./filters/excerpt.js"))
 
     // Minify our HTML
     eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
