@@ -4,6 +4,8 @@ tags: blog
 category: Updates
 title: Flexible, clean, inexpensive thermal power
 featured_image: "/images/public/dawid-zawila--G3rw6Y02D0-unsplash.jpg"
+excerpt: 'The FOCUS 250 represents an innovative solar parabolic dish concentrator
+  design capable of delivering an abundance... '
 
 ---
 ## Introducing the FOCUS 250
