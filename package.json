@@ -16,7 +16,6 @@
     "@11ty/eleventy": "^0.10.0",
     "html-minifier": "^4.0.0",
     "laravel-mix": "^5.0.4",
-    "laravel-mix-purgecss": "^5.0.0",
     "resolve-url-loader": "^3.1.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
