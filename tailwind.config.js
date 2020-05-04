@@ -1,8 +1,9 @@
 // tailwind.config.js
 module.exports = {
   purge: [
-    './src/**/*.html',
-    './src/**/*.njk',
+    './site/**/*.html',
+    './site/**/*.njk',
+    './site/*.njk',
   ],
   theme: {
     extend: {
