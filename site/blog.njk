@@ -17,7 +17,7 @@ title: The Solarflux Blog
 
       {% for post in collections.blog %}
 
-      <article class="grid grid-cols-2 gap-6">
+      <article class="grid lg:grid-cols-2 lg:gap-6">
 
         <a class="relative block overflow-hidden featured-image-link" href="{{ post.url }}">
 
@@ -29,7 +29,7 @@ title: The Solarflux Blog
 
         <div class="py-6">
 
-          <div class="{{ post.data.category }}">
+          <div class="{{ post.data.category | categoryStyle}}">
             <a href="/blog/{{ post.data.category | lower }}/" class="px-2 py-1 text-sm no-underline rounded-full">{{ post.data.category }}</a>
           </div>
 
