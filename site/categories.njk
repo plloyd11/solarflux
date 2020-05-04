@@ -58,7 +58,7 @@ permalink: "/blog/{{ category.name | slug }}/"
 
             <div>
             <div class="text-base text-gray-600">
-              {{ post.templateContent | renderExcerpt(80)}}
+              {{ post.data.excerpt }}
             </div>
 
           </div>
