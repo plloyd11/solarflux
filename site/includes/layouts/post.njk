@@ -1,63 +1,99 @@
 ---
 layout: default
+body_class: blog-post
 ---
 
 {# a post layout #}
-<main id="main" class="flex flex-col flex-1 py-10 main inner lg:py-20 focus:outline-none" tabindex="-1">
+<main class="max-w-4xl px-4 mx-auto max sm:px-6 lg:px-8">
 
-    <article id="container-centre" class="flex-1 column centre">
+		<article class="mt-12">
 
-        <div class="mb-12 md:mb-20">
+				<!-- Title -->
+				<header class="mb-6">
+						<h1 class="text-3xl font-bold text-gray-900 lg:text-5xl page-title">{{ title }}</h1>
+						<p class="mt-1">Maybe we should add a quick synopsis / tagline section</p>
+						{# <p class="author">By {{ site.author.name }}</p> #}
+						<!-- Date + Social -->
+						<div class="flex items-center justify-between mt-6">
+								<div class="flex items-center mb-6">
+										<svg class="w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+												<defs>
+														<style>
+																.a {
+																		fill: none;
+																		stroke: currentColor;
+																		stroke-linecap: round;
+																		stroke-linejoin: round;
+																		stroke-width: 1.5px;
+																}
+														</style>
+												</defs>
+												<rect width="22.5" height="19.5" x=".752" y="3.75" class="a" rx="1.5" ry="1.5"/>
+												<path d="M.752 9.75h22.5M6.752 6V.75M17.252 6V.75" class="a"/>
+										</svg>
+										<time datetime="{{ date }}" class="text-gray-600">
+												{{ date | dateDisplay }}
+										</time>
+								</div>
+								<div class="flex items-center">
+										<div class="mr-2">
+												{{this}}
+												<a href="http://twitter.com/share?url={{ site.url | encodeUri }}{{ page.url }}&text={{ title | encodeUri }}&via={{ site.twitterAccount }}" target="_blank">
+														<svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+																<path fill="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M23.18 6.71l-2.1-.9 1.1-2.4-2.56.85a4.47 4.47 0 00-3-1.2 4.51 4.51 0 00-4.5 4.5v1c-3.54.73-6.63-1.2-9.5-4.5q-.75 4 1.5 6l-3.29-.5a4.55 4.55 0 004.25 4l-2.75 1c1 2 2.82 2.31 5.25 2.5a11.52 11.52 0 01-6.75 2c12.76 5.67 20.25-2.66 20.25-10v-.83z"/>
+														</svg>
+												</a>
+										</div>
+										<div>
+												<a href="https://www.linkedin.com/sharing/share-offsite/?mini=true&url={{ site.url | encodeUri }}{{ page.url | encodeUri }}&title={{ title | encodeUri }}&summary={{ title | encodeUri }}&source=SolarFlux" target="_blank">
+														<svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+																<path fill="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.67 22.63H.81V8.7h4.86zm10.09-9.39a2.14 2.14 0 00-2.14 2.14v7.25H8.51V8.7h5.11v1.59a6.76 6.76 0 014.28-1.6c3.17 0 5.37 2.35 5.37 6.81v7.13H17.9v-7.25a2.14 2.14 0 00-2.14-2.15zm-10-9.36a2.5 2.5 0 11-2.5-2.5 2.5 2.5 0 012.48 2.5z"/>
+														</svg>
+												</a>
+										</div>
+								</div>
+						</div>
+				</header>
 
-            <header>
-                <h1 class="text-3xl page-title md:text-center md:text-5xl lg:text-6xl">{{ title }}</h1>
-            </header>
+				<!-- Feature Image -->
+				{% if featured_image %}
+						<figure class="mb-16">
+								<img data-lazy="{{ featured_image }}" alt="{{ image_caption }}" class="rounded-lg">
+								{% if image_caption %}
+										<figcaption class="mt-4 text-sm italic text-center text-gray-600">{{ image_caption }}</figcaption>
+								{% endif %}
+						</figure>
+				{% endif %}
 
-            <div class="flex justify-center text-sm text-gray-600 md:text-base">
+				<div class="mb-20 content post">
 
-                {# <p class="author">By {{ site.author.name }}</p> #}
+						{{ content | safe }}
 
-                <p class="px-2">—</p>
+				</div>
 
-                <time datetime="{{ date }}">
-                    {{ date | dateDisplay }}
-                </time>
+				<footer class="flex items-center justify-between">
+						<div>
+								<a href="/blog">Back to insights</a>
+						</div>
+								<div class="flex items-center">
+										<div class="mr-2">
+												{{this}}
+												<a href="http://twitter.com/share?url={{ site.url | encodeUri }}{{ page.url }}&text={{ title | encodeUri }}&via={{ site.twitterAccount }}" target="_blank">
+														<svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+																<path fill="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M23.18 6.71l-2.1-.9 1.1-2.4-2.56.85a4.47 4.47 0 00-3-1.2 4.51 4.51 0 00-4.5 4.5v1c-3.54.73-6.63-1.2-9.5-4.5q-.75 4 1.5 6l-3.29-.5a4.55 4.55 0 004.25 4l-2.75 1c1 2 2.82 2.31 5.25 2.5a11.52 11.52 0 01-6.75 2c12.76 5.67 20.25-2.66 20.25-10v-.83z"/>
+														</svg>
+												</a>
+										</div>
+										<div>
+												<a href="https://www.linkedin.com/sharing/share-offsite/?mini=true&url={{ site.url | encodeUri }}{{ page.url | encodeUri }}&title={{ title | encodeUri }}&summary={{ title | encodeUri }}&source=SolarFlux" target="_blank">
+														<svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+																<path fill="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.67 22.63H.81V8.7h4.86zm10.09-9.39a2.14 2.14 0 00-2.14 2.14v7.25H8.51V8.7h5.11v1.59a6.76 6.76 0 014.28-1.6c3.17 0 5.37 2.35 5.37 6.81v7.13H17.9v-7.25a2.14 2.14 0 00-2.14-2.15zm-10-9.36a2.5 2.5 0 11-2.5-2.5 2.5 2.5 0 012.48 2.5z"/>
+														</svg>
+												</a>
+										</div>
+								</div>
+				</footer>
 
-            </div>
-
-            {# featured post image #}
-            {% if featured_image %}
-
-                <figure class="mt-10 md:mt-20">
-
-                    <img data-lazy="{{ featured_image }}" alt="{{ image_caption }}">
-
-                    {% if image_caption %}
-
-                        <figcaption class="mt-4 text-sm italic text-center text-gray-600">{{ image_caption }}</figcaption>
-
-                    {% endif %}
-
-                </figure>
-
-            {% endif %}
-
-        </div>
-
-        <div class="content post md:px-16">
-
-            {{ content | safe }}
-
-        </div>
-
-        <div class="mt-16 md:px-16">
-
-            <div class="flex justify-between pt-12 mt-16 border-t border-gray-200">
-                {% if prevPost %}<p class="text-sm text-gray-700"><span>Previous:</span> <a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a></p>{% endif %}
-                {% if nextPost %}<p class="text-sm text-gray-700"><span>Next:</span> <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></p>{% endif %}
-            </div>
-        </div>
-
-    </article>
+		</article>
 
 </main>

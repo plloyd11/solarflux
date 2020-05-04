@@ -87,5 +87,3 @@ mix
             .minify(paths.javascript.dest + 'main.js')
 
     }
-
-

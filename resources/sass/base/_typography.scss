@@ -5,27 +5,5 @@ h1,
 h2,
 h3,
 h4 {
-	@apply font-bold leading-tight mt-0 font-display;
-}
-
-.page-title {
-	@apply text-5xl;
-}
-
-// content
-.content {
-
-	// paragraph
-	p {
-		@apply mb-8;
-
-		// intro paragraph
-		&:first-child {
-			@apply border-b border-gray-200 text-2xl pb-10 mb-10 font-light leading-snug text-gray-600;
-
-			@screen md {
-				@apply text-3xl;
-			}
-		}
-	}
+	@apply leading-tight font-display;
 }

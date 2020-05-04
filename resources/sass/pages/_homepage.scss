@@ -2,6 +2,9 @@
   &--hero {
     background: url('/images/homepage/hero.jpg') no-repeat bottom;
     background-size: cover;
+    h1 {
+      font-size: 42px;
+    }
   }
 
   &--main-features {

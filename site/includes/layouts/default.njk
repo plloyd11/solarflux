@@ -40,11 +40,11 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 </head>
 
-<body {% if body_class %} id="{{ body_class }}"{% endif %} class="text-lg leading-normal text-purple-900">
+<body {% if body_class %} id="{{ body_class }}"{% endif %} class="text-lg leading-normal text-gray-700">
 
     <a class="sr-only" href="#main">Skip to content</a>
 
-    <div id="wrapper" class="relative flex flex-col min-h-screen pb-16 wrapper md:pb-0">
+    <div id="wrapper" class="relative flex flex-col min-h-screen wrapper">
 
         {# include header #}
         {% if body_class === "home" %}
@@ -60,9 +60,6 @@
         {% include "components/footer.njk" %}
 
     </div>
-
-    {# include mobile nav #}
-    {% include "components/mobile-nav.njk" %}
 
 </body>
 </html>

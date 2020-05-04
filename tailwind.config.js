@@ -10,6 +10,7 @@ module.exports = {
         cyan: '#9cdbff',
         primaryPurple: '#16134C',
         primaryOrange: '#F04822',
+        primaryPurpleDark: '#1F1E33',
       },
       spacing: {
         '96': '24rem',

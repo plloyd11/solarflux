@@ -1,0 +1,39 @@
+.post {
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  h3 {
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  p {
+    margin-top: 32px;
+    line-height: 1.5;
+  }
+
+}
+
+.category-updates {
+  a {
+    color: #8F5C1E;
+    background-color: #F6B160;
+  }
+}
+
+.category-news {
+  a {
+    color: #221E8F;
+    background-color: #6560F6;
+  }
+}
+
+.category-learning {
+  a {
+    color: #8F331E;
+    background-color: #F67C60;
+  }
+}

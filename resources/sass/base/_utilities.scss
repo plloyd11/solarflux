@@ -11,7 +11,22 @@
     @apply opacity-100;
 }
 
-// 'container' helper class
-.inner {
-    @apply w-full max-w-6xl ml-auto mr-auto px-6;
+.rounded-bg {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    @media (min-width: 1024px) {
+        border-top-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+    }
+}
+
+.rounded-top-left {
+    border-top-left-radius: 100px;
+    @media (min-width: 1024px) {
+        border-top-left-radius: 200px;
+    }
+}
+
+.z-max {
+    z-index: 100000;
 }

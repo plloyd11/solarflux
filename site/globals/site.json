@@ -1,12 +1,13 @@
 {
   "name": "Solarflux",
-  "url": "https://www.solarflux.co/",
+  "url": "https://www.solarflux.co",
   "author": {
     "name": "Peter Lloyd",
     "email": "plloyd11@gmail.com",
     "handle": "@leteployd",
     "avatar": "/images/blog/author.jpg"
   },
+  "twitterAccount": "twitterAccount",
   "images": {
     "logo": "/images/logo/logo.png",
     "favicon": "/images/favicon.ico",
@@ -20,15 +21,14 @@
     "instagram": "https://www.instagram.com"
   },
   "address": {
-    "street": "123 Fake Street",
-    "street_2": "Fake Road",
-    "city": "London",
-    "postcode": "LN1 234",
-    "country": "GB"
+    "street": "1017 MacArthur Road",
+    "street_2": "Unit B",
+    "city": "Reading",
+    "postcode": "PA",
+    "country": "USA"
   },
   "contact": {
-    "phone": "123 456 789",
-    "mobile": "(+44) 1234 5678",
-    "email": "hello@maxpower.com"
+    "phone": "610-370-7060",
+    "email": "info@solarflux.co"
   }
 }

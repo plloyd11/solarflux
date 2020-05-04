@@ -1,6 +1,9 @@
 <header id="ass" class="items-center w-full p-4 mx-auto bg-white shadow-md header z-1000 md:p-6" role="banner">
-	<div class="container flex justify-between mx-auto">
+	<div class="container flex items-center justify-between mx-auto">
 		{% include "components/logo.njk" %}
 		{% include 'components/nav.njk' %}
+		<div class="lg:hidden">
+			{% include 'components/mobile-nav.njk' %}
+		</div>
 	</div>
 </header>

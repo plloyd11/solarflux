@@ -4,6 +4,7 @@ module.exports = eleventyConfig => {
 
     // Nunjuck filters
     eleventyConfig.addFilter("categoryStyle", require("./filters/categoryStyle.js"))
+    eleventyConfig.addFilter("encodeUri", require("./filters/encodeUri.js"))
     eleventyConfig.addFilter("dateDisplay", require("./filters/dates.js"))
     eleventyConfig.addFilter("htmlDateDisplay", require("./filters/timestamp.js"))
 
@@ -49,6 +50,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy("js")
     eleventyConfig.addPassthroughCopy("images")
     eleventyConfig.addPassthroughCopy("robots.txt")
+    eleventyConfig.addPassthroughCopy({ "static/admin": "admin"})
 
     return {
         templateFormats: ["md", "njk"],

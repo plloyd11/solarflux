@@ -5,6 +5,10 @@
             "url": "/product/"
         },
         {
+            "label": "Markets",
+            "url": "/markets/"
+        },
+        {
             "label": "About",
             "url": "/about/"
         },
