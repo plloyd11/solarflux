@@ -6,28 +6,35 @@ fields:
 - type: text
   name: title
   label: Title
+  config:
+    required: true
 - type: datetime
   name: date
   label: Date
   config:
     export_format: YYYY-MM-DD
     date_format: MM/DD/YYYY
+    required: true
   default: now
 - type: file
   name: featured_image
   label: Featured Image
-- name: tags
-  type: text
+- name: excerpt
+  type: textarea
+  default: ''
   config:
-    required: false
-  hidden: true
-  label: tags
-  default: blog
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 120
+  label: Excerpt
+  description: Post excerpt (120 characters)
 - name: category
   type: select
-  default: []
+  default: ''
   config:
-    required: false
+    required: true
     options:
     - Updates
     - News
@@ -38,5 +45,12 @@ fields:
       file: 
       path: 
   label: Category
+- name: tags
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: tags
+  default: blog
 pages:
 - site/blog/flexible-clean-inexpensive-thermal-power.md
