@@ -1,6 +1,10 @@
 .global--form {
-	padding-top: 6rem;
-	padding-bottom: 8rem;
+	padding-top: 4rem;
+	padding-bottom: 6rem;
 	background: url('/images/form-bg.jpg') no-repeat center center;
 	background-size: cover;
+	@media (min-width: 1024px) {
+		padding-top: 6rem;
+		padding-bottom: 8rem;
+	}
 }
