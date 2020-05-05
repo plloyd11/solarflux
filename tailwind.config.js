@@ -1,9 +1,9 @@
 // tailwind.config.js
 module.exports = {
   purge: [
-    './site/**/*.html',
     './site/**/*.njk',
     './site/*.njk',
+    './site/includes/components/*.njk',
   ],
   theme: {
     extend: {
@@ -15,6 +15,7 @@ module.exports = {
         cyan: '#9cdbff',
         primaryPurple: '#16134C',
         primaryOrange: '#F04822',
+        primaryOrangeDark: '#E2421D',
         primaryPurpleDark: '#1F1E33',
       },
       spacing: {

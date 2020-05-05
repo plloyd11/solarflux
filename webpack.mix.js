@@ -43,12 +43,9 @@ mix
     // Production only
     if ( mix.inProduction() )
     {
-
-        // Remove any unused CSS using Purge
         mix
 
             // Minifies CSS & JS files
             .minify(paths.sass.dest + 'main.css')
             .minify(paths.javascript.dest + 'main.js')
-
     }
