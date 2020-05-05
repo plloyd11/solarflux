@@ -18,10 +18,6 @@
 // Import our custom page styles
 @import 'pages/all';
 
-.section-header {
-  @apply mb-6 text-3xl font-bold text-primaryPurple;
-}
-
 // Import Tailwind utilities
 // TailwindCSS recommends leaving utilities till last to ensure they aren't overwritten.
 @tailwind utilities;
