@@ -1,3 +1,16 @@
+// remove padding from list menu item
+
+#nav {
+    li {
+        &:last-of-type {
+            margin-right: 0;
+            a {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
 
 //========== Mobile Navigation ==========//
 
