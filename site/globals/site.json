@@ -2,7 +2,7 @@
   "name": "Solarflux",
   "url": "https://www.solarflux.co",
   "author": {
-    "name": "Peter Lloyd",
+    "name": "Naoise Irwin",
     "email": "plloyd11@gmail.com",
     "handle": "@leteployd",
     "avatar": "/images/blog/author.jpg"
@@ -11,7 +11,7 @@
   "images": {
     "logo": "/images/logo/logo.png",
     "favicon": "/images/favicon.ico",
-    "twitter": "/images/meta/twitter.jpg",
+    "twitter": "/images/meta/og.jpg",
     "og": "/images/meta/og.jpg"
   },
   "social_links": {
