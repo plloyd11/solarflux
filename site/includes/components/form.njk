@@ -1,41 +1,45 @@
 <div class="mt-12 global--form lg:mt-32">
   <h4 class="text-3xl font-semibold text-center text-white">Inquiries</h4>
   <div class="max-w-screen-lg px-4 py-5 mx-auto mt-6 bg-white shadow-lg lg:my-12 sm:rounded-lg sm:p-6">
-    <form action="#" method="POST">
+    <form name="contact form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+      <p class="hidden">
+        <label>Don’t fill this out if you're human:
+          <input name="bot-field"/></label>
+      </p>
       <div class="grid grid-cols-12 gap-6">
         <div class="col-span-6">
           <label for="first_name" class="block text-sm font-medium leading-5 text-gray-700">First name</label>
-          <input id="first_name" required type="text" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
+          <input id="first_name" required="required" type="text" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
         </div>
 
         <div class="col-span-6">
           <label for="last_name" class="block text-sm font-medium leading-5 text-gray-700">Last name</label>
-          <input id="last_name" required type="text" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
+          <input id="last_name" required="required" type="text" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
         </div>
 
         <div class="col-span-6">
           <label for="email_address" class="block text-sm font-medium leading-5 text-gray-700">Email address</label>
-          <input id="email_address" type="email" required class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
+          <input id="email_address" type="email" required="required" placeholder="name@email.com" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
         </div>
 
         <div class="col-span-6">
           <label for="phone" class="block text-sm font-medium leading-5 text-gray-700">Phone</label>
-          <input id="phone" type="number" required class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
+          <input id="phone" type="number" required="required" placeholder="555-555-5555" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
         </div>
 
         <div class="col-span-6">
           <label for="company" class="block text-sm font-medium leading-5 text-gray-700">Company</label>
-          <input required id="company" type="text" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
+          <input required="required" id="company" type="text" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
         </div>
 
         <div class="col-span-6">
           <label for="company" class="block text-sm font-medium leading-5 text-gray-700">Subject</label>
-          <input required id="company" type="text" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
+          <input required="required" id="company" type="text" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"/>
         </div>
 
         <div class="col-span-12">
           <label for="company" class="block text-sm font-medium leading-5 text-gray-700">Message</label>
-          <textarea required id="company" type="text" placeholder="Write your message" rows="4" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"></textarea>
+          <textarea required="required" id="company" type="text" placeholder="Write your message" rows="4" class="block w-full px-3 py-2 mt-1 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm form-input focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"></textarea>
         </div>
 
         <div class="col-span-12">
