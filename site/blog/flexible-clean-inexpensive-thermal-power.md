@@ -2,10 +2,10 @@
 date: 2021-01-25
 tags: blog
 category: News
-title: Flexible, clean, inexpensive thermal power
-featured_image: "/images/public/dawid-zawila--G3rw6Y02D0-unsplash.jpg"
-excerpt: 'The FOCUS represents an innovative solar parabolic dish concentrator design
-  capable of delivering an abundance... '
+title: Award of a $340K grant from the Met-Ed Penelec Sustainable Energy Fund
+featured_image: "/images/public/picture7.png"
+excerpt: The funds will assist with the implementation of a volume production process
+  for the FOCUS
 
 ---
 # Award of a $340K grant from the Met-Ed Penelec Sustainable Energy Fund
