@@ -1,21 +1,19 @@
 ---
-date: 2020-04-25
+date: 2021-01-25
 tags: blog
-category: Updates
+category: News
 title: Flexible, clean, inexpensive thermal power
 featured_image: "/images/public/dawid-zawila--G3rw6Y02D0-unsplash.jpg"
-excerpt: 'The FOCUS represents an innovative solar parabolic dish concentrator
-  design capable of delivering an abundance... '
+excerpt: 'The FOCUS represents an innovative solar parabolic dish concentrator design
+  capable of delivering an abundance... '
 
 ---
-## Introducing the FOCUS
+# Award of a $340K grant from the Met-Ed Penelec Sustainable Energy Fund
 
-The FOCUS represents an innovative solar parabolic dish concentrator design capable of delivering an abundance of clean, inexpensive thermal energy for a wide range of applications.
+We are pleased to share that we have been awarded a $340,000 grant by the Met-Ed / Penelec Sustainable Energy Fund, administered by the [Berks County Community Foundation](https://bccf.org/) (BCCF) and the [Community Foundation for the Alleghenies](https://cfalleghenies.org/) (CFA). 
 
-### The most efficient solar thermal energy technology
+The funds will be used to assist with the implementation of a volume production process for key components of the FOCUS concentrator, enabling us to advance towards our goal of offering a cost-competitive solar thermal energy solution. We are proud and honored to have been selected as the recipient of this grant and appreciate the faith and trust bestowed upon us by the selection committee. 
 
-Utilizing dual-axis tracking, the FOCUS maximizes solar energy capture year-round. As a thermal system, the full spectrum of solar irradiance is captured, and losses resulting from conversion into electricity are avoided. The result is a system delivering approximately 80% conversion of available solar irradiance into thermal energy - far higher than competing technologies.
+"With this funding, we plan to increase production speed and capacity, and dramatically reduce unit costs," said Naoise Irwin, Solarflux's chairman.
 
-### Designed from inception for minimum cost
-
-The FOCUS has been designed from the ground up to minimize the Levelized Cost of Heat (LCOH) over the lifetime of the system. Built from environmentally resilient low-cost metal components, the FOCUS is manufactured using proven techniques borrowed from the aerospace and automotive industries. Mast-mounted, the FOCUS is highly land-efficient per unit of energy generated. Installation and calibration are streamlined, as the FOCUS requires limited land preparation and utilizes an auto-calibration process.
+Founded in 2019, Solarflux Energy Technologies, Inc. offers the FOCUS, a parabolic dish concentrator capable of producing low-cost solar thermal energy for a range of applications. 
