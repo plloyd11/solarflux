@@ -2,7 +2,7 @@
 date: 2021-01-25
 tags: blog
 category: News
-title: Award of a $340K grant from the Met-Ed Penelec Sustainable Energy Fund
+title: Award of a $340K grant from the Met-Ed / Penelec Sustainable Energy Fund
 featured_image: "/images/public/picture7.png"
 excerpt: The funds will assist with the implementation of a volume production process
   for the FOCUS
