@@ -13,32 +13,23 @@ body_class: blog-post
             {# <p class="author">By {{ site.author.name }}</p> #}
             <!-- Date + Social -->
             <div class="flex items-center justify-between mt-6">
-                <div class="flex items-center mb-6">
-                    <svg class="w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                        <defs>
-                            <style>
-                                .a {
-                                    fill: none;
-                                    stroke: currentColor;
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                    stroke-width: 1.5px;
-                                }
-                            </style>
-                        </defs>
-                        <rect
-                            width="22.5"
-                            height="19.5"
-                            x=".752"
-                            y="3.75"
-                            class="a"
-                            rx="1.5"
-                            ry="1.5"
+                <div class="mb-8 text-base text-gray-600 md:flex">
+                    <svg
+                        class="w-6 h-6 mr-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                         />
-                        <path d="M.752 9.75h22.5M6.752 6V.75M17.252 6V.75" class="a" />
                     </svg>
-                    <time datetime="{{ date }}" class="text-gray-600">
-                        {{ date | dateDisplay }}
+                    <time datetime="{{ post.date }}">
+                    {{ post.date | dateDisplay }}
                     </time>
                 </div>
                 <div class="flex items-center">
