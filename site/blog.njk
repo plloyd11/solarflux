@@ -37,21 +37,20 @@ title: The Solarflux Blog
             <a class="block text-2xl font-semibold text-gray-800 hover:text-gray-600" href="{{ post.url }}">{{ post.data.title }}</a>
           </h2>
 
-          <div class="mb-4 text-sm text-gray-600 md:flex">
-            <svg class="w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                <defs>
-                    <style>
-                        .a {
-                            fill: none;
-                            stroke: currentColor;
-                            stroke-linecap: round;
-                            stroke-linejoin: round;
-                            stroke-width: 1.5px;
-                        }
-                    </style>
-                </defs>
-                <rect width="22.5" height="19.5" x=".752" y="3.75" class="a" rx="1.5" ry="1.5"/>
-                <path d="M.752 9.75h22.5M6.752 6V.75M17.252 6V.75" class="a"/>
+          <div class="mb-8 text-base text-gray-600 md:flex">
+            <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
             </svg>
             <time datetime="{{ post.date }}">
               {{ post.date | dateDisplay }}
@@ -61,15 +60,10 @@ title: The Solarflux Blog
 
           <p class="text-lg leading-normal text-gray-800">{{ post.data.excerpt }}</p>
 
-          <div class="flex items-center block mt-8">
+          <div class="flex items-center mt-8">
             <a href="{{ post.url }}" class="mr-1 leading-none text-primaryPurple hover:underline hover:text-primaryPurpleDark">Continue Reading</a>
-            <svg class="w-3" xmlns="http://www.w3.org/2000/svg" id="Regular" viewBox="0 0 24 24">
-              <defs>
-                <style>
-                  .cls-1{fill:none;stroke:#16134C;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill-rule:evenodd}
-                </style>
-              </defs>
-              <path d="M12.311.75L23.03 11.47a.749.749 0 010 1.06L12.311 23.25M1.061.75L11.78 11.47a.749.749 0 010 1.06L1.061 23.25" class="cls-1"/>
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
             </svg>
           </div>
 

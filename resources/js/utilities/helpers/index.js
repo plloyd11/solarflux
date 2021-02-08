@@ -1,4 +1,4 @@
-import $$ from '@utilities/selectors'
+import $$ from '@utilities/selectors';
 
 /**
  * @description Test if the body id is something
@@ -8,15 +8,12 @@ import $$ from '@utilities/selectors'
  */
 
 const page = function(name) {
-
     if (!name) {
-        return $$.body.getAttribute('id')
+        return $$.body.getAttribute('id');
     }
 
-    return ($$.body.getAttribute('id') == name)
-
-}
-
+    return $$.body.getAttribute('id') == name;
+};
 
 /**
  * @description Check if element exists the page
@@ -26,14 +23,7 @@ const page = function(name) {
  */
 
 const exists = function(el, limit) {
+    return el.length > 0;
+};
 
-    return (el.length > 0)
-
-}
-
-export {
-    page,
-    exists
-}
-
-
+export { page, exists };

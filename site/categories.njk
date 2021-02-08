@@ -12,15 +12,14 @@ permalink: "/blog/{{ category.name | slug }}/"
 
 <main>
   <section class="article-hero">
-    <h1>Insights</h1>
+    <h1>{{ category.name }}</h1>
     <img src="/images/blog/blog-hero.png" alt="">
   </section>
 
   <section class="mt-24 mb-16">
-    <h2 class="text-3xl text-center text-gray-900">All About Solar</h2>
-    <p class="max-w-screen-xl mx-auto text-xl font-light text-center text-gray-600">Introduction to the blog text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi est massa varius vulputate viverra senectus eleifend. Ultricies integer elementum non eget at etiam imperdiet odio vel.</p>
+    <h2 class="text-3xl text-center text-gray-900">Check out all of our blog posts in the {{ category.name }} category</h2>
   </section>
-  
+
   <section class="max-w-screen-xl mx-auto" aria-label="Blogs">
 
     <div class="grid grid-cols-3 gap-6 posts">

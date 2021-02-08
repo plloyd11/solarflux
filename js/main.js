@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************!*\
   !*** ./resources/js/modules/lazyload/index.js ***!
   \************************************************/
-/*! exports provided: default */
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -152,8 +152,6 @@ var Lazyload = function Lazyload() {
     });
   }
 }();
-
-/* harmony default export */ __webpack_exports__["default"] = (Lazyload);
 
 /***/ }),
 

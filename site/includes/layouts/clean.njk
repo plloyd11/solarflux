@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if meta_title %}{{ meta_title }}{% else %}{{ title }}{% endif %} | {{ site.name }}</title>
     <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ excerpt }}{% endif %}">
-    {% if page.fileSlug === 'blog' %}
-        <meta name="robots" content="noindex,follow" />
-    {% else %}
-        <meta name="robots" content="index,follow" />
-    {% endif %}
-
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
 
     {# if your site's entire CSS comes in under 14kb, you may want to inline in the head #}
     {# include main.css if in development mode #}
@@ -20,13 +13,6 @@
     {% else %}
         {# else, use the minified css file for production #}
         <link rel="stylesheet" href="/css/main.min.css">
-    {% endif %}
-
-    {# include scripts #}
-    {% if helpers.environment === "development" %}
-        <script src="/js/main.js" defer></script>
-    {% else %}
-        <script src="/js/main.min.js" defer></script>
     {% endif %}
 
     {# include social meta tags #}
@@ -38,18 +24,6 @@
 
     {# canonical #}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166990003-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-166990003-1');
-    </script>
-
-
 </head>
 
 <body {% if body_class %} id="{{ body_class }}"{% endif %} class="text-lg leading-normal text-gray-700">
@@ -62,6 +36,8 @@
         {{ content | safe }}
 
     </div>
+
+    {% include "components/firebase-scripts.njk" %}
 
 </body>
 </html>
