@@ -39,8 +39,8 @@ permalink: "/blog/{{ category.name | slug }}/"
 
           <div class="px-4 py-6">
 
-            <div class="{{ post.data.category | categoryStyle()}}">
-              <a href="/blog/{{ post.data.category | lower }}/">{{ post.data.category }}</a>
+            <div class="{{ post.data.category | categoryStyle}}">
+                <a href="/blog/{{ post.data.category | lower }}/" class="px-2 py-1 text-sm no-underline rounded-full">{{ post.data.category }}</a>
             </div>
 
             <h2 class="mb-6 text-xl">

@@ -13,7 +13,7 @@ body_class: blog-post
             {# <p class="author">By {{ site.author.name }}</p> #}
             <!-- Date + Social -->
             <div class="flex items-center justify-between mt-6">
-                <div class="mb-8 text-base text-gray-600 md:flex">
+                <div class="flex items-center mb-6">
                     <svg
                         class="w-6 h-6 mr-2"
                         xmlns="http://www.w3.org/2000/svg"
@@ -28,8 +28,8 @@ body_class: blog-post
                             d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                         />
                     </svg>
-                    <time datetime="{{ post.date }}">
-                    {{ post.date | dateDisplay }}
+                    <time datetime="{{ date }}" class="text-gray-600">
+                        {{ date | dateDisplay }}
                     </time>
                 </div>
                 <div class="flex items-center">
