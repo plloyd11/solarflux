@@ -8,13 +8,13 @@ new Vue({
     },
 
     methods: {
-        register() {
-            firebase
-                .auth()
-                .createUserWithEmailAndPassword(this.email, this.password)
-                .then(() => (window.location = '/dashboard'))
-                .catch(error => alert(error.message));
-        },
+        // register() {
+        //     firebase
+        //         .auth()
+        //         .createUserWithEmailAndPassword(this.email, this.password)
+        //         .then(() => (window.location = '/dashboard'))
+        //         .catch(error => alert(error.message));
+        // },
 
         signIn() {
             firebase
