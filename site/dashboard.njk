@@ -6,4 +6,60 @@ body_class: dashboard
 title: Dashboard
 ---
 
-<iframe src="https://quicksight-web-app-thebucket-1lu1onafawl7g.s3.us-east-2.amazonaws.com/index.html" width="100%" height="90vh"></iframe>
+<main class="auth-shit">
+    <div v-if="authUser">
+        <section>
+            <nav class="bg-primaryPurpleDark">
+                <div class="px-4 mx-auto">
+                    <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="flex items-center flex-shrink-0">
+                            <div v-if="authUser.photoURL">
+                                <img class="w-8 h-8 mr-2 rounded-full" :src="authUser.photoURL" :alt="authUser.displayName">
+                                <h4 class="text-white">Welcome, <span v-text="authUser.displayName"></span></h4>
+                            </div>
+                            <div v-else>
+                                <h4 class="text-white">Welcome, <span v-text="authUser.email"></span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                        <button @click="signOut" type="button" class="relative inline-flex items-center px-4 py-2 text-base font-bold text-white border border-transparent rounded-md shadow-sm font-display bg-primaryOrange hover:bg-primaryOrangeDark focus:outline-none">
+                            <svg class="w-5 h-5 mr-2 -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                            </svg>
+                            <span>Logout</span>
+                        </button>
+                        </div>
+                        <div class="hidden md:flex-shrink-0 md:flex md:items-center">
+                        <!-- Profile -->
+                        <div class="relative">
+                            <div>
+                            <button class="flex text-sm bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
+                                <span class="sr-only">Open user menu</span>
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="px-4 mx-auto mt-12 sm:px-10" style="--aspect-ratio: 16/9;">
+            <iframe
+                src="https://quicksight-web-app-thebucket-1lu1onafawl7g.s3.us-east-2.amazonaws.com/index.html"
+                width="1600"
+                height="900"
+                frameborder="0">
+            </iframe>
+        </section>
+    </div>
+    <div v-else>
+        <div class="flex flex-col items-center justify-center h-screen">
+            <p class="text-2xl text-center text-gray-900">You need to create an account before you can view the dashboard!</p>
+            <a href="/login" class="mt-2 text-primaryOrange">Return to the login screen</a>
+        </div>
+    </div>
+</main>
