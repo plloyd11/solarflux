@@ -14,4 +14,4 @@ The funds will be used to assist with the implementation of a volume production 
 
 "With this funding, we plan to increase production speed and capacity, and dramatically reduce unit costs," said Naoise Irwin, Solarflux's chairman.
 
-Solarflux markets the FOCUS, a parabolic dish concentrator capable of delivering flexible, clean, inexpensive solar thermal power for a wide range of uses, including industrial process heat, space heating and cooling, water desalination and purification, hot water, and electricity. Flexibly deployable and space-efficient, the FOCUS is ideally suited to distributed generation applications. 
+Solarflux markets the FOCUS, a parabolic dish concentrator capable of delivering flexible, clean, inexpensive solar thermal power for a wide range of uses, including industrial process heat, space heating and cooling, water desalination and purification, hot water, and electricity. Flexibly deployable and space-efficient, the FOCUS is ideally suited to distributed generation applications.  
