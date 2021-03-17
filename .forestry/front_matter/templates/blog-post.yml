@@ -52,5 +52,3 @@ fields:
   hidden: true
   label: tags
   default: blog
-pages:
-- site/blog/flexible-clean-inexpensive-thermal-power.md
