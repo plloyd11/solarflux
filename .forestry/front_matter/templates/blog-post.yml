@@ -52,3 +52,5 @@ fields:
   hidden: true
   label: tags
   default: blog
+pages:
+- site/blog/the-potential-for-parabolic-dish-concentrators-the-most-efficient-concentrating-solar-power-technology.md
