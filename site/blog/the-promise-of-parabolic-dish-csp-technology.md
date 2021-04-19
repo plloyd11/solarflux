@@ -3,8 +3,8 @@ date: 2021-04-19
 tags: blog
 title: The Promise of Parabolic Dish CSP Technology
 featured_image: "/images/public/focus.jpg"
-excerpt: Parabolic dish, the highest efficiency concentrating solar power (CSP) technology,
-  shows significant potential
+excerpt: Parabolic dishes are commonly understood to be the most efficient concentrating
+  solar power (CSP) technology
 category: Learning
 
 ---
