@@ -28,6 +28,8 @@ CSP can be an important part of helping countries with significant solar resourc
 
 For more information about the FOCUS, please reach out to us at contact@solarflux.co.
 
+ 
+
 ***
 
 [\[1\]](#_ftnref1) Coventry, J. and Andraka, C.: “Dish Systems for CSP” (2017); [https://www.osti.gov/servlets/purl/1356835.](https://www.osti.gov/servlets/purl/1356835. "https://www.osti.gov/servlets/purl/1356835.")
