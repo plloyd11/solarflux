@@ -53,4 +53,5 @@ fields:
   label: tags
   default: blog
 pages:
+- site/blog/solarflux-focus-parabolic-dish-concentrator-demonstrates-72-solar-to-thermal-conversion-efficiency.md
 - site/blog/the-promise-of-parabolic-dish-csp-technology.md
