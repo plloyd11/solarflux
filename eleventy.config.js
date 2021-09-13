@@ -39,6 +39,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
     eleventyConfig.addLayoutAlias('clean', 'layouts/clean.njk');
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
+    eleventyConfig.addLayoutAlias('allow-mixed', 'layouts/allow-mixed.njk');
 
     // Include our static assets
     eleventyConfig.addPassthroughCopy('css');

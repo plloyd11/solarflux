@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" class="min-h-full antialiased font-body">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if meta_title %}{{ meta_title }}{% else %}{{ title }}{% endif %} | {{ site.name }}</title>
+    <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ excerpt }}{% endif %}">
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+
+    {# if your site's entire CSS comes in under 14kb, you may want to inline in the head #}
+    {# include main.css if in development mode #}
+    {% if helpers.environment === "development" %}
+        <link rel="stylesheet" href="/css/main.css">
+    {% else %}
+        {# else, use the minified css file for production #}
+        <link rel="stylesheet" href="/css/main.min.css">
+    {% endif %}
+
+    {# include scripts #}
+    {% if helpers.environment === "development" %}
+        <script src="/js/main.js" defer></script>
+    {% else %}
+        <script src="/js/main.min.js" defer></script>
+    {% endif %}
+
+    {# include social meta tags #}
+    {% include "components/social-meta.njk" %}
+
+    {# lastly include favicon, fonts, etc #}
+    <link rel="icon" type="image/png" href="{{ site.images.favicon }}">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    {# canonical #}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166990003-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166990003-1');
+    </script>
+
+</head>
+
+<body {% if body_class %} id="{{ body_class }}"{% endif %} class="text-lg leading-normal text-gray-700">
+
+    <a class="sr-only" href="#main">Skip to content</a>
+
+    <div id="wrapper" class="relative flex flex-col min-h-screen wrapper">
+
+        {# include header #}
+        {% if body_class === "home" %}
+        {% include "components/transparent-header.njk" %}
+        {% else %}
+        {% include "components/header.njk" %}
+        {% endif %}
+
+        {# include content #}
+        {{ content | safe }}
+
+        {# include footer #}
+        {% include "components/footer.njk" %}
+
+    </div>
+
+    <!-- HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7803024.js"></script>
+
+</body>
+</html>
