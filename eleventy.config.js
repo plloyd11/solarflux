@@ -39,14 +39,14 @@ module.exports = eleventyConfig => {
     eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
     eleventyConfig.addLayoutAlias('clean', 'layouts/clean.njk');
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
-    eleventyConfig.addLayoutAlias('allow-mixed', 'layouts/allow-mixed.njk');
+    eleventyConfig.addLayoutAlias('casper', 'layouts/casper.njk');
 
     // Include our static assets
     eleventyConfig.addPassthroughCopy('css');
     eleventyConfig.addPassthroughCopy('js');
     eleventyConfig.addPassthroughCopy('images');
     eleventyConfig.addPassthroughCopy('robots.txt');
-    eleventyConfig.addPassthroughCopy({ 'static/admin': 'admin' });
+    eleventyConfig.addPassthroughCopy('static');
 
     return {
         templateFormats: ['html', 'md', 'njk'],
