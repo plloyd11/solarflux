@@ -10,6 +10,10 @@ img {
     margin-right: 1%;
 }
 
+#comparisonTool {
+    overflow: scroll;
+}
+
 #address {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
