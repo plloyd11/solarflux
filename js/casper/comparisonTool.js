@@ -13,7 +13,7 @@ references = [
     {
         refText:
             'See here for description of methodology behind CSP Performance Comparison Tool –BETA',
-        refURL: './CASPER.pdf'
+        refURL: '/static/resources/CASPER.pdf'
     }
 ];
 
@@ -439,7 +439,7 @@ function initChart(data) {
                 },
                 title: {
                     display: true,
-                    text: 'Estimated Energy Collection (kWh/M²/day)'
+                    text: 'Estimated Energy Collection (kWh/m²/day)'
                 }
             }
         }
