@@ -75,7 +75,7 @@ function getControlPanel() {
 
     let troughEfficiencyCell = footHeadingsRow.insertCell();
     let trouhgEfficiencyText = document.createElement('b');
-    trouhgEfficiencyText.innerHTML = 'Trough Solar-to-thermal Efficiency';
+    trouhgEfficiencyText.innerHTML = 'Trough Solar-to-Thermal Efficiency';
     troughEfficiencyCell.appendChild(trouhgEfficiencyText);
 
     let footSpacer3 = footHeadingsRow.insertCell();
