@@ -53,5 +53,6 @@ fields:
   label: tags
   default: blog
 pages:
+- site/blog/introducing-casper-a-web-based-tool-to-compare-the-performance-of-csp-technologies.md
 - site/blog/solarflux-focus-parabolic-dish-concentrator-demonstrates-72-solar-to-thermal-conversion-efficiency.md
 - site/blog/the-promise-of-parabolic-dish-csp-technology.md
