@@ -244,6 +244,8 @@ function getFooterBar() {
 
     contentDiv.appendChild(getReferences());
 
+    contentDiv.classList.add('notes');
+
     div.appendChild(contentDiv);
 
     return div;
@@ -280,8 +282,9 @@ function getHeadingBar() {
     //logo.height = "50%";
     //div.appendChild(logo);
     const title = document.createElement('h2');
-    title.innerHTML = 'CASPER - CSP Performance Comparison (BETA)';
+    title.innerHTML = 'CASPER - CSP Performance Comparison';
     title.setAttribute('id', 'title');
+    title.setAttribute('class', 'section-header');
     div.setAttribute('class', 'titleBar');
     const dividerLine = document.createElement('hr');
     div.appendChild(title);
@@ -424,7 +427,7 @@ function initChart(data) {
                     beginAtZero: true,
                     ticks: {
                         callback: function(value, index, values) {
-                            return value + 'kWh';
+                            return value;
                         }
                     }
                 }
@@ -436,7 +439,7 @@ function initChart(data) {
                 },
                 title: {
                     display: true,
-                    text: 'Estimated Energy Collection Per M² Per Day'
+                    text: 'Estimated Energy Collection (kWh/M²/day)'
                 }
             }
         }

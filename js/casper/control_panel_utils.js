@@ -44,7 +44,7 @@ function getControlPanel() {
     efficiencyCell.setAttribute('class', 'efficiencyBox');
     let efficiencyText = document.createElement('b');
     efficiencyCell.setAttribute('id', 'efficiency');
-    efficiencyCell.style.color = 'red';
+    efficiencyCell.style.color = '#10B981';
     efficiencyText.innerHTML = '+0%';
     efficiencyCell.appendChild(efficiencyText);
 
@@ -87,12 +87,12 @@ function getControlPanel() {
 
     let latitudeHeadingCell = footHeadingsRow.insertCell();
     let latitudeHeadingText = document.createElement('b');
-    latitudeHeadingText.innerHTML = 'latitude';
+    latitudeHeadingText.innerHTML = 'Latitude';
     latitudeHeadingCell.appendChild(latitudeHeadingText);
 
     let longitudeHeadingCell = footHeadingsRow.insertCell();
     let longitudeHeadingText = document.createElement('b');
-    longitudeHeadingText.innerHTML = 'longitude';
+    longitudeHeadingText.innerHTML = 'Longitude';
     longitudeHeadingCell.appendChild(longitudeHeadingText);
 
     let dniHeadingCell = footHeadingsRow.insertCell();
