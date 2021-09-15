@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.1",
-    "@tailwindcss/typography": "^0.4.1"
+    "@tailwindcss/typography": "^0.4.1",
+    "netlify-cli": "^6.9.2"
   }
 }
