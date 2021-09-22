@@ -218,8 +218,11 @@ function getContainer() {
     var controlPanel = getControlPanel();
     container.appendChild(controlPanel);
 
-    //var chartPanel = getChartPanel();
-    //container.appendChild(chartPanel);
+    var chartContent = getChartContent();
+    container.appendChild(chartContent);
+
+    var outputContent = getOutputContent();
+    container.appendChild(outputContent);
 
     var footer = getFooterBar();
     container.appendChild(footer);
@@ -228,13 +231,14 @@ function getContainer() {
 }
 
 function getFooterBar() {
-    const div = document.createElement('div');
+    const div = document.createElement('section');
     const dividerLine = document.createElement('hr');
     div.appendChild(dividerLine);
 
     var notesLabel = document.createElement('h4');
     // referencesButton.setAttribute("id", "referencesButton");
     notesLabel.innerHTML = 'Notes:';
+    notesLabel.classList.add('mt-4');
     // referencesButton.addEventListener("click", onShowRefClicked);
     div.appendChild(notesLabel);
 
