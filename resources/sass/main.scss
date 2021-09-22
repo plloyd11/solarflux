@@ -21,3 +21,17 @@
 // Import Tailwind utilities
 // TailwindCSS recommends leaving utilities till last to ensure they aren't overwritten.
 @tailwind utilities;
+
+@layer components {
+    .primary-cta {
+        @apply inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primaryPurple hover:bg-primaryPurpleDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryPurpleDark;
+    }
+
+    .secondary-btn {
+        @apply inline-flex items-center justify-center px-4 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryPurple;
+    }
+
+    .input-field {
+        @apply shadow-sm focus:ring-primaryPurple focus:border-primaryPurple block w-full sm:text-sm border-gray-300 rounded-md;
+    }
+}
