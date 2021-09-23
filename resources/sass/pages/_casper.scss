@@ -110,6 +110,7 @@ $large: 1024px;
         margin-top: 1.5rem;
         @media screen and (min-width: $large) {
             margin-top: 0;
+            width: 60%;
         }
         b, td {
             font-size: 14px;
