@@ -20,7 +20,7 @@ The daily energy collected by the FOCUS concentrator during the period is shown 
 
 ![](/images/public/picture2.png)
 
-Cumulative energy collected throughout the year by the FOCUS test unit at Penn State Berks is shown in the below chart.
+Cumulative energy collected over the period by the FOCUS test unit is shown in the below chart.
 
 ![](/images/public/picture3.png)
 
