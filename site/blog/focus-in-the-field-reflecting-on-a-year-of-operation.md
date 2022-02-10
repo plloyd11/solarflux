@@ -48,6 +48,10 @@ During the 12-month observation period, there were 14 days in which the FOCUS au
 
 We are more than satisfied with the performance of the FOCUS field trial over the past 12 months, both in terms of demonstrating strong conversion efficiency consistent with our models, and that the FOCUS can be operated with minimal maintenance. The field trial has also provided a valuable proving ground for developing our SCADA platform. In the coming months we will build upon the experience we’ve gained during this trial and will conduct intensive field testing of our production candidate FOCUS concentrators as we prepare to ramp up production to meet growing market demand around the world.
 
+ 
+
+ 
+
 _Notes on Methodology & Definitions_
 
 We define solar-to-thermal conversion efficiency as the conversion of available sunlight (“incident energy”) into usable heat (“collected energy”), at the concentrator’s receiver. We measure incident energy using a pyrheliometer attached to the concentrator. The pyrheliometer records the amount of available direct beam solar radiation in kilowatt per meter squared. We then multiply the amount of solar radiation by the aperture of the reflective surface of the FOCUS concentrator, which is 14m2 to get total captured incident energy, measured in kilowatt (kW) optical. This is measured every 15 seconds through the day, and logged in our database. Collected energy is calculated by measuring the temperature of the thermal fluid circulating through the concentrator’s receiver, before and after it passes through the receiver. This information, combined with the mass flow rate of the fluid and its specific heat, permits calculation of the instantaneous amount of heat energy collected, also measured in kilowatt thermal. To get solar-to-thermal conversion efficiency, we then simply divide the amount of collected thermal energy by the incident optical energy for whatever time period we want to look at.
