@@ -26,7 +26,7 @@ Cumulative energy collected over the period by the FOCUS test unit is shown in t
 
 The annual average solar-to-thermal performance data corresponds well with both the optical models we've used in the design of the FOCUS, as well as the industry benchmark peak performance test we performed in June 2021. As we’ve shared previously, this test demonstrated peak solar-to-thermal efficiency for the FOCUS of 72%, was performed in accordance with ASTM 905-87, and the data and methods were independently reviewed and reported on by Lehigh University’s Energy Research Center.
 
-The close alignment between the peak solar-to-thermal conversion efficiency of the FOCUS, as demonstrated by the June test, with the annual average solar-to-thermal collection efficiency shown above for the 12 months ended January 2022 is a result of the two-axis tracking capability of the FOCUS. Two axis tracking means the full reflective aperture of the FOCUS is always perfectly aligned with the sun, year-around. This is a unique feature of parabolic dish concentrators, and the primary reason why they are the most efficient of all solar energy technologies.
+The close alignment between the peak solar-to-thermal conversion efficiency of the FOCUS, as demonstrated by the June 2021 test, with the annual average solar-to-thermal collection efficiency shown above for the 12 months ended January 2022 is primarily the result of the two-axis tracking capability of the FOCUS. Two axis tracking means the full reflective aperture of the FOCUS is always perfectly aligned with the sun, year-around. This is a unique feature of parabolic dish concentrators, and the primary reason why they are the most efficient of all solar energy technologies.
 
 **Maintenance Requirements**
 
