@@ -1,8 +1,8 @@
 ---
 date: 2022-02-10
 tags: blog
-title: 'FOCUS in the Field: Reflecting on a Year of Operation'
-featured_image: "/images/public/focus-in-sun_feb22.jpg"
+title: 'FOCUS in the field: reflecting on a year of operation'
+featured_image: "/images/public/img_0866.jpg"
 excerpt: In this blog post, we review the most recent 12 months of operational data
   from the FOCUS concentrator
 category: Updates
