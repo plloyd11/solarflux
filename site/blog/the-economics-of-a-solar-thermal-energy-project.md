@@ -8,7 +8,7 @@ excerpt: The FOCUS can be a highly cashflow positive project for U.S. companies 
 category: Learning
 
 ---
-In this article, we provide some background on concentrating solar power (CSP), discuss the criteria for determining whether CSP might be a good fit for your company or organization, and provide some illustrative project cashflow examples using the [FOCUS](https://www.solarflux.co/product/), our highly efficient and cost effective CSP solution.  
+In this article, we provide some background on concentrating solar power (CSP), discuss the criteria for determining whether CSP might be a good fit for your company or organization, and provide some illustrative project cashflow examples using the [FOCUS](https://www.solarflux.co/product/), our highly efficient and cost effective CSP solution.
 
 **Some Background on CSP**
 
@@ -22,7 +22,7 @@ Historically, the parabolic dish has been perceived as complex to make, and cost
 
 The NREL analysis referenced above limited its scope to only mature solar technologies, and identified the parabolic trough as the highest potential solar technology for meeting the thermal energy needs of industrial users. Since the FOCUS can serve as a drop-in replacement for parabolic trough, offering the same temperature range and utilizing the same thermal fluids and balance of plant equipment, just with far higher energy collection efficiency, it’s clear that the FOCUS could also serve this market need.
 
-Additionally, using solar heat to displace CO2 emissions is extremely space-efficient. One acre of FOCUS parabolic dish concentrators located anywhere in the U.S. Southwest will have a CO2 emissions avoidance impact equivalent to the CO2 sequestration impact of almost 700 acres of forest. This is a higher CO2 avoidance impact per acre than that of any other solar technology, due to the efficiency of parabolic dish.
+Additionally, using solar heat to displace CO2 emissions is extremely space-efficient. One acre of FOCUS parabolic dish concentrators located anywhere in the U.S. Southwest will have result in CO2 emissions avoidance equivalent to the CO2 sequestration impact of almost 700 acres of forest. This is a higher CO2 avoidance impact per acre than that of any other solar technology, due to the efficiency of parabolic dish.
 
 **Who can best use Solar Thermal Energy?**
 
@@ -54,7 +54,7 @@ Thus, simplistically speaking, the 70 units could meet approx. 50% of the Rivers
 
 The overall project cost is assumed to be the same across both sites, estimated at $3.1 million, fully installed. Each project is assumed to be 90% debt financed at 6.5% interest over a 10 year term. The project life is assumed to be 25 years. Annual operating expenses are assumed to be 1.25% of the overall project cost, growing at 3% per annum. An annual output decay factor of 0.2% is assumed, though negligible decay has been observed in accelerated aging and field testing. The energy output from the project is to be priced at $10.26/MMBtu, increasing at 3% per year.
 
-Additionally, each project is assumed to commence construction during 2022, and go into service in 2023. Thus, each project is eligible for the full 26% investment tax credit. This is a dollar-for-dollar reduction in the federal tax expense. Additionally, each project is eligible for accelerated depreciation and bonus depreciation. Thus, ACME Brewing can expense 87% of the $3.1M project cost, or $2.7M. 80% of that amount can be expensed in year 1, as bonus depreciation, with a portion of the remaining 20% also expensible in year 1. Furthermore, the project operating costs and financing costs will produce an additional tax shield. Assuming a 35% federal tax rate, this results in a significant reduction in federal tax expense in year 1. With these assumptions, overall project cashflows for each plant are provided below. 
+Additionally, each project is assumed to commence construction during 2022, and go into service in 2023. Thus, each project is eligible for the full 26% investment tax credit. This is a dollar-for-dollar reduction in the federal tax expense. Additionally, each project is eligible for accelerated depreciation and bonus depreciation. Thus, ACME Brewing can expense 87% of the $3.1M project cost, or $2.7M. 80% of that amount can be expensed in year 1, as bonus depreciation, with a portion of the remaining 20% also expensible in year 1. Furthermore, the project operating costs and financing costs will produce an additional tax shield. Assuming a 35% federal tax rate, this results in a significant reduction in federal tax expense in year 1. With these assumptions, overall project cashflows for each plant are provided below.
 
 **Reading, PA plant cashflows**
 
