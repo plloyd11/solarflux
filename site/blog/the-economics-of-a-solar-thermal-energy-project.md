@@ -1,7 +1,7 @@
 ---
 date: 2022-06-09
 tags: blog
-title: The Economics of a Solar Thermal Energy Project
+title: 'The economics of a solar thermal energy project using the FOCUS '
 featured_image: "/images/public/sun.jpg"
 excerpt: The FOCUS can be a highly cashflow positive project for U.S. companies meeting
   the necessary criteria
