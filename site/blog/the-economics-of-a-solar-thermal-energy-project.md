@@ -2,10 +2,10 @@
 date: 2022-06-09
 tags: blog
 title: The Economics of a Solar Thermal Energy Project
-featured_image: ''
+featured_image: "/images/public/sun.jpg"
 excerpt: The FOCUS can be a highly cashflow positive project for U.S. companies meeting
   the necessary criteria
-category: Updates
+category: Learning
 
 ---
 In this article, we provide some background on concentrating solar power (CSP), discuss the criteria for determining whether CSP might be a good fit for your company or organization, and provide some illustrative project cashflow examples using the [FOCUS](https://www.solarflux.co/product/), our highly efficient and cost effective CSP solution.  
