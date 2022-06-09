@@ -22,7 +22,7 @@ Historically, the parabolic dish has been perceived as complex to make, and cost
 
 The NREL analysis referenced above limited its scope to only mature solar technologies, and identified the parabolic trough as the highest potential solar technology for meeting the thermal energy needs of industrial users. Since the FOCUS can serve as a drop-in replacement for parabolic trough, offering the same temperature range and utilizing the same thermal fluids and balance of plant equipment, just with far higher energy collection efficiency, it’s clear that the FOCUS could also serve this market need.
 
-Additionally, using solar heat to displace CO2 emissions is extremely space-efficient. One acre of FOCUS parabolic dish concentrators located almost anywhere in the U.S. will deliver annual CO2 emissions avoidance equivalent to the CO2 sequestration impact hundreds of acres of forest. This is a higher CO2 avoidance impact per acre than that of any other solar technology, due to the efficiency of parabolic dish.
+Additionally, using solar heat to displace CO2 emissions is extremely space-efficient. One acre of FOCUS parabolic dish concentrators located almost anywhere in the U.S. will deliver annual CO2 emissions avoidance equivalent to the CO2 sequestration impact of hundreds of acres of forest. This is a higher CO2 avoidance impact per acre than that of any other solar technology, due to the efficiency of parabolic dish.
 
 **Who can best use Solar Thermal Energy?**
 
