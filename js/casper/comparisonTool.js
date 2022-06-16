@@ -524,9 +524,18 @@ function initTable(available, dish, trough) {
     //ADD Sum Row
     getSumsRow(table);
 
+    function getWeightedPerformanceDelta(table) {
+        focusWeightedSum = table.rows[15].cells[6].innerHTML.replace(/(<([^>]+)>)/gi, '');
+        troughWeightedSum = table.rows[15].cells[10].innerHTML.replace(/(<([^>]+)>)/gi, '');
+        weightedPerformanceDelta = Number((focusWeightedSum / troughWeightedSum - 1) * 100).toFixed(
+            2
+        );
+        return weightedPerformanceDelta;
+    }
+
     var chartcontainer = document.getElementById('chart');
     document.getElementById('efficiency').innerHTML =
-        '+' + Number(getAvgOfTableColumn(table, 11)).toFixed(2) + '%';
+        '+' + getWeightedPerformanceDelta(table) + '%';
     downloadTable = table;
     //chartcontainer.appendChild(table);
 }
