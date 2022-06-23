@@ -1,7 +1,7 @@
 ---
 date: 2022-06-23
 tags: blog
-title: 'Concentrated Solar Power (CSP): a hugely efficient means for CO2 avoidance'
+title: 'CSP for industry: a hugely efficient means for CO2 avoidance'
 featured_image: "/images/public/illustration.png"
 excerpt: Just one acre of FOCUS concentrators can provide a CO2 mitigation impact
   equal to hundreds of acres of forest
