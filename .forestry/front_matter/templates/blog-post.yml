@@ -53,6 +53,7 @@ fields:
   label: tags
   default: blog
 pages:
+- site/blog/concentrated-solar-power-csp-a-hugely-efficient-means-for-co2-avoidance.md
 - site/blog/focus-in-the-field-reflecting-on-a-year-of-operation.md
 - site/blog/introducing-casper-a-web-based-tool-to-compare-the-performance-of-csp-technologies.md
 - site/blog/solar-thermal-s-massive-but-under-appreciated-decarbonization-potential.md
