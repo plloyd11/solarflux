@@ -36,7 +36,7 @@ In addition to CO2 sequestration, there are many reasons to love forests. Forest
 
 However, it’s important to consider the potential of technologies such as CSP, and particularly space-efficient systems such as the [FOCUS](www.solarflux.co/product), given their potential for disproportionately high CO2 avoidance impact and the urgency of reducing CO2 emissions.
 
-**Source:**
+**Footnotes**
 
  1. "Heat is the world’s largest energy end use, accounting for almost half of global final energy consumption in 2021, significantly more than electricity (20%) and transport (30%). Industrial processes are responsible for 51% of the energy consumed for heat, while another 46% is consumed in buildings for space and water heating, and, to a lesser extent, cooking" – IEA, Renewables 2021 [https://www.iea.org/reports/renewables-2021/renewable-heat](https://www.iea.org/reports/renewables-2021/renewable-heat "https://www.iea.org/reports/renewables-2021/renewable-heat")
  2. CO2 concentrations were 420ppm as of June 2022. [https://keelingcurve.ucsd.edu/](https://keelingcurve.ucsd.edu/ "https://keelingcurve.ucsd.edu/")
